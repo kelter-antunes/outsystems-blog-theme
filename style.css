@@ -1,799 +1,712 @@
-/*
-Theme Name: Outsystems
-Theme URI: http://www.outsystems.com
-Description: Outsystems wordpress theme
-Author: Outsystems Dex Team
-Author URI: http://www.outsystems.com
-Version: 1.1
-*/
-
-/** General Styles START*/
-body{
-	background-color: #e6e6e6;
+body {
+background-color:#e6e6e6
 }
 
 ul {
-	margin: 14px 0;
-	padding: 0 0 0 40px;
+margin:14px 0;
+padding:0 0 0 40px
 }
 
 #footer-wrapper ul {
-	margin: 0;
-	padding: 0;
+margin:0;
+padding:0
 }
+
 #footer-wrapper ul[class*="span"] {
-	margin-left: 28px;
+margin-left:28px
 }
 
-a:link, a:visited{
-	text-decoration: none; 
-	color: #000000;
+a:link,a:visited {
+text-decoration:none;
+color:#000
 }
 
-a:hover{
-	color: #5f5f5f;
+a:hover {
+color:#5f5f5f
 }
 
 .Button {
-  display: inline-block;
-  padding: 7px 20px;
-  
-  /* there are differences in the FF implementation */
-  -moz-box-sizing: padding-box;
-  box-sizing: border-box;
-  
-  margin-bottom: 0;
-  margin-left: .15em;
-  margin-right: .15em;
-  vertical-align: middle;
-  cursor: pointer;
-  
-  /* added from original */
-  min-width: 100px;
-  
-  /* IE6/7 fix!
-     http://reference.sitepoint.com/css/min-width#compatibilitysection */
-  *zoom: 1;
-  *overflow:visible;
-  _overflow:visible;
-  
-  /* text properties */
-  text-align: center;
-  font-size: 13px;
-  line-height: 18px;
-  *line-height: 18px;
-  color: #333333;
-  
-  /* background */
-  background-color: #f5f5f5;
-  *background-color: #e6e6e6;
-  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  
-  /* border */
-  border: 1px solid #cccccc;
-  *border:0;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  
-  /* shadow */
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  /* iebuttonfix */
-  *filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=-1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=0, offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8', offX=0, offY=1);
-  -ms-filter: "progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0)";
+display:inline-block;
+padding:7px 20px;
+-moz-box-sizing:padding-box;
+box-sizing:border-box;
+margin-bottom:0;
+margin-left:.15em;
+margin-right:.15em;
+vertical-align:middle;
+cursor:pointer;
+min-width:100px;
+*zoom:1;
+*overflow:visible;
+_overflow:visible;
+text-align:center;
+font-size:13px;
+line-height:18px;
+*line-height:18px;
+color:#333;
+background-color:#f5f5f5;
+*background-color:#e6e6e6;
+background-image:-ms-linear-gradient(top,#fff,#e6e6e6);
+background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+background-image:-webkit-linear-gradient(top,#fff,#e6e6e6);
+background-image:-o-linear-gradient(top,#fff,#e6e6e6);
+background-image:linear-gradient(top,#fff,#e6e6e6);
+background-image:-moz-linear-gradient(top,#fff,#e6e6e6);
+background-repeat:repeat-x;
+border:1px solid #ccc;
+*border:0;
+border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+border-color:#e6e6e6 #e6e6e6 #bfbfbf;
+border-bottom-color:#b3b3b3;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff',endColorstr='#e6e6e6',GradientType=0);
+filter:progid:dximagetransform.microsoft.gradient(enabled=false);
+-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+*filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
+-ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0)"
 }
 
 .Button:hover {
-    color: #333333;
-    text-decoration: none;
-    background-color: #e6e6e6;  
-    *background-color: #e6e6e6;
-/* Buttons in IE7 don't get borders, so darken on hover */
-
-  background-position: 0 -15px;
-  -webkit-transition: background-position 0.1s linear;
-     -moz-transition: background-position 0.1s linear;
-      -ms-transition: background-position 0.1s linear;
-       -o-transition: background-position 0.1s linear;
-          transition: background-position 0.1s linear;
-  
-  /* iebuttonfix */
-  *filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6', endColorstr='#ffe6e6e6', GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=-1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=0, offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8', offX=0, offY=1);
-  -ms-filter: "progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6', endColorstr='#ffe6e6e6', GradientType=0)";
+color:#333;
+text-decoration:none;
+background-color:#e6e6e6;
+*background-color:#e6e6e6;
+background-position:0 -15px;
+-webkit-transition:background-position .1s linear;
+-moz-transition:background-position .1s linear;
+-ms-transition:background-position .1s linear;
+-o-transition:background-position .1s linear;
+transition:background-position .1s linear;
+*filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6',endColorstr='#ffe6e6e6',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
+-ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6',endColorstr='#ffe6e6e6',GradientType=0)"
 }
 
-.Button:focus{
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+.Button:focus {
+outline:thin dotted #333;
+outline:5px auto -webkit-focus-ring-color;
+outline-offset:-2px
 }
 
-.Button.active,
-.Button:active {
-  background-color: #e6e6e6;
-  *background-color: #d9d9d9;
-  background-color: #cccccc \9;
-  background-color: #d9d9d9 \9;
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+.Button.active,.Button:active {
+background-color:#e6e6e6;
+*background-color:#d9d9d9;
+background-color:#ccc \9;
+background-color:#d9d9d9 \9;
+background-image:none;
+outline:0;
+-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+box-shadow:inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05)
 }
+
 .Button[disabled] {
-    cursor: default;
-    background-color: #e6e6e6;
-    background-image: none;
-    opacity: 0.65;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+cursor:default;
+background-color:#e6e6e6;
+background-image:none;
+opacity:.65;
+filter:alpha(opacity=65);
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none
 }
-
-/* Button Primary */
 
 .Button.Primary {
-  background-color: #444444;
-  *background-color: #444444;
-  background-image: -ms-linear-gradient(top, #444444, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
-  background-image: -webkit-linear-gradient(top, #444444, #222222);
-  background-image: -o-linear-gradient(top, #444444, #222222);
-  background-image: -moz-linear-gradient(top, #444444, #222222);
-  background-image: linear-gradient(top, #444444, #222222);
-  background-repeat: repeat-x;
-  border-color: #222222 #222222 #387038;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#222222', GradientType=0);
-  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-
-  *filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=-1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=0, offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8', offX=0, offY=1);
-  -ms-filter: "progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0)"\0/;
-  
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+background-color:#444;
+*background-color:#444;
+background-image:-ms-linear-gradient(top,#444,#222);
+background-image:-webkit-gradient(linear,0 0,0 100%,from(#444),to(#222));
+background-image:-webkit-linear-gradient(top,#444,#222);
+background-image:-o-linear-gradient(top,#444,#222);
+background-image:-moz-linear-gradient(top,#444,#222);
+background-image:linear-gradient(top,#444,#222);
+background-repeat:repeat-x;
+border-color:#222 #222 #387038;
+border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#222222',GradientType=0);
+filter:progid:dximagetransform.microsoft.gradient(enabled=false);
+*filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#ff222222',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
+-ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#ff222222',GradientType=0)"\0/;
+color:#fff;
+text-shadow:0 -1px 0 rgba(0,0,0,0.25)
 }
 
-.Button.Primary:hover,
-.Button.Primary:active
+.Button.Primary:hover,.Button.Primary:active
 .Button.Primary[disabled] {
-    text-decoration: none;
-    background-color: #222222;
-    color: #fff;
-  
-    /* iebuttonfix */
-    *filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff222222', GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=-1, offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0', offX=0, offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8', offX=0, offY=1);
-    -ms-filter: "progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff222222', GradientType=0)"\0/;
+text-decoration:none;
+background-color:#222;
+color:#fff;
+*filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff222222',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
+-ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff222222',GradientType=0)"\0/
 }
 
-/* copied from Twitter Bootstrap */
-textarea, input, select {
-    background-color: #FCFCF4;
-    border: 1px solid #CCC;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-  /* box-shadow doesn't work on the select tag in webkits */
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-      -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s;
-}
-.Filters textarea,
-.Filters input,
-.Filters select {
-    background-color: #FFFFFF;
-    border: 1px solid #AAA;
+textarea,input,select {
+background-color:#FCFCF4;
+border:1px solid #CCC;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+-webkit-transition:border linear 0.2s,box-shadow linear .2s;
+-moz-transition:border linear 0.2s,box-shadow linear .2s;
+-ms-transition:border linear 0.2s,box-shadow linear .2s;
+-o-transition:border linear 0.2s,box-shadow linear .2s;
+transition:border linear 0.2s,box-shadow linear .2s
 }
 
-textarea:focus, input:focus, select:focus {
-  border-color: rgba(187, 187, 187, 0.8);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-  
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(187, 187, 187, 0.6);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(187, 187, 187, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(187, 187, 187, 0.6);
+.Filters textarea,.Filters input,.Filters select {
+background-color:#FFF;
+border:1px solid #AAA
 }
 
-/* =WordPress Core
--------------------------------------------------------------- */
+textarea:focus,input:focus,select:focus {
+border-color:rgba(187,187,187,0.8);
+outline:0;
+outline:thin dotted \9;
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(187,187,187,0.6);
+-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(187,187,187,0.6);
+box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(187,187,187,0.6)
+}
+
 .alignnone {
-    margin: 5px 20px 20px 0;
+margin:5px 20px 20px 0
 }
 
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
+.aligncenter,div.aligncenter {
+display:block;
+margin:5px auto
 }
 
 .alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
+float:right;
+margin:5px 0 20px 20px
 }
 
 .alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+float:left;
+margin:5px 20px 20px 0
 }
 
 .aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
+display:block;
+margin:5px auto
 }
 
 a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
+float:right;
+margin:5px 0 20px 20px
 }
 
 a img.alignnone {
-    margin: 5px 20px 20px 0;
+margin:5px 20px 20px 0
 }
 
 a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+float:left;
+margin:5px 20px 20px 0
 }
 
 a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+display:block;
+margin-left:auto;
+margin-right:auto
 }
 
 .wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
+background:#fff;
+border:1px solid #f0f0f0;
+max-width:96%;
+padding:5px 3px 10px;
+text-align:center
 }
 
 .wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
+margin:5px 20px 20px 0
 }
 
 .wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
+margin:5px 20px 20px 0
 }
 
 .wp-caption.alignright {
-    margin: 5px 0 20px 20px;
+margin:5px 0 20px 20px
 }
 
 .wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
+border:0 none;
+height:auto;
+margin:0;
+max-width:98.5%;
+padding:0;
+width:auto
 }
 
 .wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
+font-size:11px;
+line-height:17px;
+margin:0;
+padding:0 4px 5px
 }
-/* =WordPress Core
--------------------------------------------------------------- */
 
 .header-hero-wrapper.home {
-	height: 145px;
-	filter: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: url('img/blog-top-page-shadow.png') top center;
-	background-repeat: repeat-x;
+height:145px;
+filter:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+background:url(img/blog-top-page-shadow.png) top center;
+background-repeat:repeat-x
 }
 
 .search_field .button {
-	background: url('http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=26072013') no-repeat -1px -1px;
+background:url(http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=26072013) no-repeat -1px -1px
 }
 
-.header_top{
-	clear: both;
-    height: 35px;
-    width: 100%;
-	margin-bottom: 20px;
+.header_top {
+clear:both;
+height:35px;
+width:100%;
+margin-bottom:20px
 }
 
 .postmetadata {
-	color: #818182;
-	margin-top: 20px;
+color:#818182;
+margin-top:20px
 }
 
-/** General Styles END*/
-/** Homepage Styles START*/
-
 .categories .toggle {
-	background-color: #F2F2F2;
-    border: 1px solid #B3B3B3;
-    float: left;
-    height: 20px;
-    line-height: 20px;
-	padding: 5px 15px;
+background-color:#F2F2F2;
+border:1px solid #B3B3B3;
+float:left;
+height:20px;
+line-height:20px;
+padding:5px 15px
 }
 
 .categories .toggle.noleftborder {
-	border-left: 0;
+border-left:0
 }
 
 .categories .toggle.notopborder {
-	border-top: 0;
+border-top:0
 }
 
-.categories .toggle:hover{
-	cursor: pointer;
+.categories .toggle:hover {
+cursor:pointer
 }
 
 .categories i {
-	background: url("img/icons.png") no-repeat;
-	display: inline-block;
+background:url(img/icons.png) no-repeat;
+display:inline-block
 }
 
-.categories i.tech-zone{
-	background-position: -90px -1px;
-	width: 15px;
-	height: 18px;
+.categories i.tech-zone {
+background-position:-90px -1px;
+width:15px;
+height:18px
 }
 
-.categories i.platform-in-action{ 
-	background-position: -40px -2px;
-	width: 30px;
-	height: 18px;
+.categories i.platform-in-action {
+background-position:-40px -2px;
+width:30px;
+height:18px
 }
 
-.categories i.perspectives{ 
-	background-position: -4px -2px;
-	width: 16px;
-	height: 18px;
+.categories i.perspectives {
+background-position:-4px -2px;
+width:16px;
+height:18px
 }
 
-.categories .toggle.active i.tech-zone,
-.categories .toggle.active i.platform-in-action,
-.categories .toggle.active i.perspectives,
-.categories .toggle.active{
-	background-color: #FFF;
+.categories .toggle.active i.tech-zone,.categories .toggle.active i.platform-in-action,.categories .toggle.active i.perspectives,.categories .toggle.active {
+background-color:#FFF
 }
 
 .post .header {
-	position: relative;
-	min-height: 30px;
-	max-height: 120px;
-	overflow: hidden;
-	text-align: center;
+position:relative;
+min-height:30px;
+max-height:120px;
+overflow:hidden;
+text-align:center
 }
 
 .post .header .category {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 5px 15px;
-	color: white;
+position:absolute;
+top:0;
+left:0;
+padding:5px 15px;
+color:#fff
 }
 
 .post .header .category.tech-zone {
-	background-color: #616161;
+background-color:#616161
 }
 
 .post .header .category.platform-in-action {
-	background-color: #6699CD;
+background-color:#6699CD
 }
 
 .post .header .category.perspectives {
-	background-color: #CC2928;
+background-color:#CC2928
 }
 
-.post .header .category i {
-}
-
-.post .header .category.perspectives i,
-.post .header .category.platform-in-action i,
-.post .header .category.tech-zone i {
-	background: url("img/icons.png") no-repeat;
-	display: inline-block;
+.post .header .category.perspectives i,.post .header .category.platform-in-action i,.post .header .category.tech-zone i {
+background:url(img/icons.png) no-repeat;
+display:inline-block
 }
 
 .post .header .category.perspectives i {
-	background-position: -4px -31px;
-	width: 16px;
-	height: 18px;
+background-position:-4px -31px;
+width:16px;
+height:18px
 }
 
 .post .header .category.platform-in-action i {
-	background-position: -40px -31px;
-	width: 30px;
-	height: 18px;
+background-position:-40px -31px;
+width:30px;
+height:18px
 }
 
 .post .header .category.tech-zone i {
-	background-position: -90px -30px;
-	width: 15px;
-	height: 18px;
-	
+background-position:-90px -30px;
+width:15px;
+height:18px
 }
 
-.subscription_area{
-	text-align: right;
+.subscription_area {
+text-align:right
 }
 
-.subscription_area input[type=text]{
-	border: 1px solid #888888;
-    height: 25px;
-    padding: 2px 10px;
-    width: 250px;
+.subscription_area input[type=text] {
+border:1px solid #888;
+height:25px;
+padding:2px 10px;
+width:250px
 }
 
-.subscription_area input[type=button]{
-	margin-left: 10px;
+.subscription_area input[type=button] {
+margin-left:10px
 }
 
 .post {
-	width: 306px;
-	background-color: #FFF;
-	float: left;
-	margin-bottom: 40px;
-	overflow: hidden;
+width:306px;
+background-color:#FFF;
+float:left;
+margin-bottom:40px;
+overflow:hidden
 }
 
 .post:hover {
-	background-color: #F2F2F2;
-	cursor: pointer;
+background-color:#F2F2F2;
+cursor:pointer
 }
 
 a.postlink:hover {
-	color: #CC2827;
+color:#CC2827
 }
 
-.container .post .entry{
-	padding: 15px;
+.container .post .entry {
+padding:15px
 }
 
 .container .post.first {
-	margin-left: 0px;
+margin-left:0
 }
 
 .post .postcontent {
-    pointer-events: none;
+pointer-events:none
 }
 
 .post .postcontent .more-link {
-    pointer-events: initial;
+pointer-events:initial
 }
 
 .post .postcontent a {
-	color: #333333 !important;
+color:#333!important
 }
 
 .post .postcontent .more-link {
-	color: #3498DB !important;
+color:#3498DB!important
 }
 
-/** Homepage Styles START*/
-
-/** Detail Page START */
 .fullpost {
-	background-color: #FFF;
-	padding: 30px;
+background-color:#FFF;
+padding:30px
 }
-/** Detail Page END */
 
 .leftbar {
-    width: 645px;
-    float: left;
+width:645px;
+float:left
 }
+
 .comments-template {
-    background-color: #f2f2f2;
-    padding: 30px;
+background-color:#f2f2f2;
+padding:30px
 }
 
 .comment-author h6 {
-    font-weight: 600;  
-	color: #333;
-    font-family: 'myriad-pro', Arial, sans-serif;
-    line-height: normal;
-    padding: 0;
-    margin: 0;
+font-weight:600;
+color:#333;
+font-family:'myriad-pro',Arial,sans-serif;
+line-height:normal;
+padding:0;
+margin:0
 }
+
 .comment-meta {
-    color: gray;
-    font-size: 12px;
-    margin-bottom: 10px;
+color:gray;
+font-size:12px;
+margin-bottom:10px
 }
+
 .comment {
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px solid lightgray;
+padding-top:15px;
+margin-top:15px;
+border-top:1px solid lightgray
 }
 
 .comment:first-child {
-    padding-top: 0;
-    margin-top: 0;
-    border-top: none;
+padding-top:0;
+margin-top:0;
+border-top:none
 }
 
-.comment > .comment,
-.comment > .comment-respond {
-	margin-left: 20px;
+.comment > .comment,.comment > .comment-respond {
+margin-left:20px
 }
 
 .comment-respond {
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px solid lightgray;
+padding-top:15px;
+margin-top:15px;
+border-top:1px solid lightgray
 }
 
 .comment-respond:first-child {
-	border-top: none;
-	padding: 0;
-	margin: 0;
+border-top:none;
+padding:0;
+margin:0
 }
 
 .commentlist .comment-respond {
-	padding-left: 20px;
-    padding-top: 0;
-    margin-top: 0;
-    border-top: none;
+padding-left:20px;
+padding-top:0;
+margin-top:0;
+border-top:none
 }
 
 .form-allowed-tags {
-	display: none;
+display:none
 }
 
-/** Sidebar START */
-.sidebar{
-	margin-left: 30px;
-	width: 305px;
-	float: left;
+.sidebar {
+margin-left:30px;
+width:305px;
+float:left
 }
 
-.sidebar .social_share,
-.sidebar .rss_subscription,
-.sidebar .author_info {
-	background-color: #FFFFFF;
-    padding: 15px;
-	width: 275px;
-	margin-bottom: 20px;
+.sidebar .social_share,.sidebar .rss_subscription,.sidebar .author_info {
+background-color:#FFF;
+padding:15px;
+width:275px;
+margin-bottom:20px
 }
 
 .author_photo {
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
+float:right;
+margin-left:10px;
+margin-bottom:10px
 }
 
 .more_posts {
-    margin-bottom: 20px;
+margin-bottom:20px
 }
 
 .more_posts .categories .toggle {
-    float: none;
-    text-align: center;
+float:none;
+text-align:center
 }
-
-/** Sidebar END */
 
 .category {
-    margin-bottom: 30px;
+margin-bottom:30px
 }
 
-.category a,
-.category a:link,
-.category a:visited,
-.comment p a,
-.comment p a:link,
-.comment p a:visited,
-.postcontent a, 
-.postcontent a:link,
-.postcontent a:visited ,
-.rss_subscription a, 
-.rss_subscription a:link,
-.rss_subscription a:visited {
-    color: #3498DB;
+.category a,.category a:link,.category a:visited,.comment p a,.comment p a:link,.comment p a:visited,.postcontent a,.postcontent a:link,.postcontent a:visited,.rss_subscription a,.rss_subscription a:link,.rss_subscription a:visited {
+color:#3498DB
 }
-.category a:hover,
-.comment p a:hover,
-.postcontent a:hover {
-    text-decoration: underline;
+
+.category a:hover,.comment p a:hover,.postcontent a:hover {
+text-decoration:underline
 }
 
 .fullpost h2 {
-	margin-bottom: 0;
+margin-bottom:0
 }
 
 .fullpost .tags {
-	margin-top: 10px;
+margin-top:10px
 }
 
 .author i {
-	display: inline-block;
-	background: url("img/icons.png") no-repeat -48px -63px;
-	width: 18px;
-	height: 17px;
+display:inline-block;
+background:url(img/icons.png) no-repeat -48px -63px;
+width:18px;
+height:17px
 }
 
 .tags i {
-	display: inline-block;
-	background: url("img/icons.png") no-repeat -4px -63px;
-	width: 20px;
-	height: 17px;
+display:inline-block;
+background:url(img/icons.png) no-repeat -4px -63px;
+width:20px;
+height:17px
 }
+
 .fullpost .tags a {
-    -webkit-border-radius: 16px;  
-    -moz-border-radius: 16px;  
-    border-radius: 16px;
-    display: inline-block;
-    background-color: #e6e6e6;
-    margin-left: 10px;
-    padding: 1px 10px;
-    color: #606060;
-	margin-bottom: 10px;
+-webkit-border-radius:16px;
+-moz-border-radius:16px;
+border-radius:16px;
+display:inline-block;
+background-color:#e6e6e6;
+margin-left:10px;
+padding:1px 10px;
+color:#606060;
+margin-bottom:10px
 }
+
 .fullpost .tags a:hover {
-    color: #CC2827;
+color:#CC2827
 }
 
 .commentmetadata {
-    margin-bottom: 10px;
-    color: #818182;
-    font-size: 12px;
+margin-bottom:10px;
+color:#818182;
+font-size:12px
 }
-.commentmetadata a:link,
-.commentmetadata a:visited {
-    color: #818182;
+
+.commentmetadata a:link,.commentmetadata a:visited {
+color:#818182
 }
 
 .commentmetadata a:hover {
-    text-decoration: underline;
+text-decoration:underline
 }
 
-
-.comment-form > div,
-.comment-form > p {
-    width: 460px;
-    padding-top: 10px;
+.comment-form > div,.comment-form > p {
+width:460px;
+padding-top:10px
 }
 
 .formlabel {
-    display: inline-block;
-    width: 65px;
+display:inline-block;
+width:65px
 }
 
 .forminput {
-    display: inline-block;
-    width: 385px;
-    margin-left: 10px;
+display:inline-block;
+width:385px;
+margin-left:10px
 }
 
 .forminput textarea {
-    width: 380px;
+width:380px
 }
 
 .forminput input[type="text"] {
-	width: 380px;
+width:380px
 }
 
 .form-submit {
-    text-align: right;
-    clear: both;
+text-align:right;
+clear:both
 }
 
 .comment-form {
-    width: 460px;
+width:460px
 }
 
 .comment-form > div:after
 .comment-form > p:after {
-    clear: both;
-	content: ' ';
+clear:both;
+content:' '
 }
 
-
-
-
-/* Load More */
 .LoadBox {
-	width: 100%;
-	text-align: center;
+width:100%;
+text-align:center
 }
-
-
-
 
 .rss_subscription #submit {
-    padding: 4px 8px;
+padding:4px 8px
 }
+
 .rss_subscription .txtSubscriptField {
-    width: 155px;
-    padding: 4px 4px;
+width:155px;
+padding:4px
 }
 
 .feeds {
-	margin-top: 20px;
+margin-top:20px
 }
+
 .feeds_home {
-	float:right;
+float:right
 }
 
-.feeds_home a i,
-.feeds a i {
-	display:inline-block;
-	background: url("img/icons.png") no-repeat -4px -89px;
-	width: 13px;
-	height: 15px;
+.feeds_home a i,.feeds a i {
+display:inline-block;
+background:url(img/icons.png) no-repeat -4px -89px;
+width:13px;
+height:15px
 }
 
-.feeds_home a,
-.feeds a {
-	color: #3498DB;
+.feeds_home a,.feeds a {
+color:#3498DB
 }
 
-.feeds_home a:hover,
-.feeds a:hover {
-	color: #2980B9;
+.feeds_home a:hover,.feeds a:hover {
+color:#2980B9
 }
 
-.feeds_home a:hover i,
-.feeds a:hover i {
-	display:inline-block;
-	background: url("img/icons.png") no-repeat -4px -111px;
-	width: 13px;
-	height: 15px;
+.feeds_home a:hover i,.feeds a:hover i {
+display:inline-block;
+background:url(img/icons.png) no-repeat -4px -111px;
+width:13px;
+height:15px
 }
 
 .author_info {
-    margin-top: 20px;
-    border-top: 1px solid #e6e6e6;
-    padding-top: 20px;
+margin-top:20px;
+border-top:1px solid #e6e6e6;
+padding-top:20px
 }
 
 .author_photo {
-    background: url("") repeat scroll 0 0 / 90px auto rgba(0, 0, 0, 0);
-    border-radius: 45px 45px 45px 45px;
-	float: left;
-    height: 90px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 90px;
+background:url() repeat scroll 0 0 / 90px auto rgba(0,0,0,0);
+border-radius:45px 45px 45px 45px;
+float:left;
+height:90px;
+margin-bottom:10px;
+margin-top:10px;
+width:90px
 }
 
 .author_data {
-	margin-left: 120px;
+margin-left:120px
 }
 
 .author_about {
-	color: #818182;
-	font-size: 12px;
+color:#818182;
+font-size:12px
 }
 
-.addthis_toolbox  {
-	display: inline-block;
+.addthis_toolbox {
+display:inline-block
 }
 
 .social_share {
-	text-align: center;
+text-align:center
 }

@@ -79,61 +79,42 @@
 						<div class="legal span12">
 							<p>
 								Built with <a class="footer-op-link" href="http://www.outsystems.com/platform/?ref=f">
-									OutSystems<sup>&reg;</sup> Platform
-								</a>&nbsp;- OutSystems &copy; All rights reserved.
-							</p>
-							<ul>
-								<li>
-									<a href="http://www.outsystems.com/legal/terms-of-use/" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
-								</li>
-								<li>
-									<a href="http://www.outsystems.com/legal/terms-of-use/privacy-statement/#7">About Cookies</a>
-								</li>
-							</ul>
-						</div>
+								OutSystems<sup>&reg;</sup> Platform
+							</a>&nbsp;- OutSystems &copy; All rights reserved.
+						</p>
+						<ul>
+							<li>
+								<a href="http://www.outsystems.com/legal/terms-of-use/" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+							</li>
+							<li>
+								<a href="http://www.outsystems.com/legal/terms-of-use/privacy-statement/#7">About Cookies</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div style="display:none;">
-			<a class="popup_link" href="http://www.outsystems.com/contact-us-pricing-info/">contact pricing</a>
-			<a class="popup_link" href="http://www.outsystems.com/try/contact-us/">contact try</a>
-		</div>
-
-		<!-- Start of google-analytics Logging Code  -->
-
-		<script type="text/javascript">
-			$( document ).ready(function() {
-			$("form.form p.submit input").addClass("btn");
-
-			$.getJSON( "http://extranetdev.outsystems.net/CorporateSite/Footer.aspx", function( data ) {
-			if(data.locale)
-			$('#footer-mid').addClass(data.locale);
-			if(data.events)
-			$("#footer-events-list li:first-child").after($(data.events));
-			if(data.contactus)
-			$('#footer-contactus-table').append($(data.contactus));
-			});
-			});
-		</script>
-
-		<script type="text/javascript">
-
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-164596-2']);
-			_gaq.push(['_setSiteSpeedSampleRate', 100]);
-			_gaq.push(['_setDomainName', 'outsystems.com']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'http://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-
-		</script>
-		<!-- End of google-analytics Logging Code -->
 	</div>
+	<div style="display:none;">
+		<a class="popup_link" href="http://www.outsystems.com/contact-us-pricing-info/">contact pricing</a>
+		<a class="popup_link" href="http://www.outsystems.com/try/contact-us/">contact try</a>
+	</div>
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+
+
+		$.getJSON( "http://www.outsystems.com/CorporateSite/Footer.aspx", function( data ) {
+			if(data.locale)
+				$('#footer-mid').addClass(data.locale);
+			if(data.events)
+				$("#footer-events-list li:first-child").after($(data.events));
+			if(data.contactus)
+				$('#footer-contactus-table').append($(data.contactus));
+		});
+	});
+	</script>
+</div>
 </div>
 <?php wp_footer(); ?>
 </body>
