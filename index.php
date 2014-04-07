@@ -26,14 +26,19 @@
 			?>
 		</div>
 		<div class="subscription_area">
-			<form method="post" action="http://go.pardot.com/l/8592/2013-11-18/dv28y">
-				<input type="text" value="" name="email" class="txtSubscriptField" placeholder="Your email" />
-				<input value="Subscribe" class="Button Primary" type="submit" id="submit" name="submit">
-			</form>
+			<?php
+			$success = $_GET['aliId'];
+			if( $success != "" )
+				echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+			else {
+				echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
+				<form id="mktoForm_1119"></form>
+				<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
+			}
+			?>
 		</div>
 	</div>
 </div>
-
 <div class="container">
 	<?php if ( have_posts() ) : ?>
 	<div class="posts">
