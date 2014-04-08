@@ -1,7 +1,7 @@
 
 <div id="comments">
 	<?php if ( have_comments() ) : ?>
-		<h4>Comments</h4>
+		<h3>Comments</h3>
 		<div class="commentlist">
 			<?php wp_list_comments(
 					array(

@@ -29,7 +29,7 @@ function ostheme_comment( $comment, $args, $depth ) {
 	<?php endif; ?>
 	<div class="comment-author vcard">
 		<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-		<?php printf( __( '<h6><span class="fn">%s<span></h6>' ), get_comment_author_link() ) ?>
+		<?php printf( __( '<h5><span class="fn">%s<span></h5>' ), get_comment_author_link() ) ?>
 	</div>
 	<?php if ( $comment->comment_approved == '0' ) : ?>
 	<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>

@@ -23,10 +23,19 @@ $more = 0;
 
 	</div>
 	<div class="rss_subscription">
-		<form method="post" action="http://go.pardot.com/l/8592/2013-11-18/dv28y">
-			<input type="text" value="" name="email" class="txtSubscriptField" placeholder="Your email" />
-			<input value="Subscribe" class="Button Primary" type="submit" id="submit" name="submit">
-		</form>
+		<div class="subscription_area">
+			<?php
+			$success = $_GET['aliId'];
+			if( $success != "" )
+				echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+			else {
+				echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
+				<form id="mktoForm_1119"></form>
+				<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
+			}
+			?>
+		</div>
+
 		<div class="feeds"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
 	</div>
 
@@ -69,7 +78,7 @@ $more = 0;
 				if ( $postcats ) {
 					foreach ( $postcats as $postcat ) {
 						if ( $postcat->name != "Uncategorized" ) {
-							echo '<div class="category '
+							echo '<div class="category byline '
 							. $postcat->slug
 							. '"><i>&nbsp;</i>&nbsp;'
 							. $postcat->name
@@ -83,7 +92,7 @@ $more = 0;
 		<div class="entry">
 			<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<div class="postcontent"><?php the_content(); ?></div>
-			<p class="postmetadata">
+			<p class="postmetadata byline">
 				By <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
 			</p>
 		</div>

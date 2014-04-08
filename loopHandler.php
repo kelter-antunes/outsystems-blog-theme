@@ -44,7 +44,7 @@ while ( have_posts() ) : the_post(); ?>
 		if ( $postcats ) {
 			foreach ( $postcats as $postcat ) {
 				if ( $postcat->name != "Uncategorized" ) {
-					echo '<div class="category '
+					echo '<div class="category byline '
 					. $postcat->slug
 					. '"><i>&nbsp;</i>&nbsp;'
 					. $postcat->name
@@ -58,7 +58,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="entry">
 	<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 	<div class="postcontent"><?php the_content(); ?></div>
-	<p class="postmetadata">
+	<p class="postmetadata byline">
 		By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
 	</p>
 </div>

@@ -29,8 +29,8 @@ global $the_post_id;
 </div>
 <div class="leftbar">
 	<div class="fullpost">
-		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		<p class="postmetadata">
+		<h2><?php the_title(); ?></h2>
+		<p class="postmetadata byline">
 			By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
 		</p>
 		<div class="postcontent"><?php the_content(); ?></div>

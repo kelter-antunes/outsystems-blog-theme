@@ -1,10 +1,10 @@
 /*
-Theme Name: Outsystems
-Theme URI: http://www.outsystems.com
+Theme Name: Outsystems Blog Theme
+Theme URI: https://github.com/kelter-antunes/outsystems-blog-theme
 Description: Outsystems wordpress theme
 Author: Outsystems Dex Team
 Author URI: http://www.outsystems.com
-Version: 1.1
+Version: 1.2
 */
 
 body {
@@ -32,6 +32,22 @@ color:#000
 
 a:hover {
 color:#5f5f5f
+}
+
+.byline {
+font-size: 12px;
+line-height: 17px;
+color: #808080;
+}
+
+.byline a {
+font-size: 12px;
+line-height: 17px;
+color: #808080;
+}
+
+.byline a:hover {
+color: #c20;
 }
 
 .Button {
@@ -76,7 +92,7 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
 box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
 *filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
--ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0)"
+-ms-filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0)
 }
 
 .Button:hover {
@@ -91,7 +107,7 @@ background-position:0 -15px;
 -o-transition:background-position .1s linear;
 transition:background-position .1s linear;
 *filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6',endColorstr='#ffe6e6e6',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
--ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6',endColorstr='#ffe6e6e6',GradientType=0)"
+-ms-filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6',endColorstr='#ffe6e6e6',GradientType=0)
 }
 
 .Button:focus {
@@ -138,7 +154,7 @@ border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
 filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#222222',GradientType=0);
 filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 *filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#ff222222',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
--ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#ff222222',GradientType=0)"\0/;
+-ms-filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444',endColorstr='#ff222222',GradientType=0)\0/;
 color:#fff;
 text-shadow:0 -1px 0 rgba(0,0,0,0.25)
 }
@@ -149,7 +165,7 @@ text-decoration:none;
 background-color:#222;
 color:#fff;
 *filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff222222',GradientType=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=-1,offY=0) progid:dximagetransform.microsoft.dropshadow(color='#ffd0d0d0',offX=0,offY=-1) progid:dximagetransform.microsoft.dropshadow(color='#ffb8b8b8',offX=0,offY=1);
--ms-filter:"progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff222222',GradientType=0)"\0/
+-ms-filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff222222',GradientType=0)\0/
 }
 
 textarea,input,select {
@@ -284,7 +300,6 @@ margin-bottom:20px
 }
 
 .postmetadata {
-color:#818182;
 margin-top:20px
 }
 
@@ -349,6 +364,7 @@ position:absolute;
 top:0;
 left:0;
 padding:5px 15px;
+line-height: 18px;
 color:#fff
 }
 
@@ -387,8 +403,31 @@ width:15px;
 height:18px
 }
 
+.categories {
+display:inline-block
+}
+
+.categories > div > a {
+    color: #606060;
+    font-size: 16px;
+}
+
 .subscription_area {
+float:right;
+display:inline-block;
 text-align:right
+}
+
+.rss_subscription > .subscription_area > .mktoForm > div.mktoFormRow > div.mktoFieldDescriptor.mktoFormCol > div.mktoFieldWrap.mktoRequiredField > input {
+width:170px!important
+}
+
+.rss_subscription > .subscription_area > .mktoForm {
+width:295px!important
+}
+
+.rss_subscription > .subscription_area > .mktoForm > .mktoFormRow {
+width:195px
 }
 
 .subscription_area input[type=text] {
@@ -413,6 +452,9 @@ overflow:hidden
 .post:hover {
 background-color:#F2F2F2;
 cursor:pointer
+}
+.post:hover > .entry > h3 > a {
+color: #CC2827;
 }
 
 a.postlink:hover {
@@ -533,6 +575,10 @@ margin-bottom:10px
 
 .more_posts {
 margin-bottom:20px
+}
+
+.more_posts > .categories {
+display:block
 }
 
 .more_posts .categories .toggle {
