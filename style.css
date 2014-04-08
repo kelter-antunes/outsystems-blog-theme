@@ -1,3 +1,12 @@
+/*
+Theme Name: Outsystems
+Theme URI: http://www.outsystems.com
+Description: Outsystems wordpress theme
+Author: Outsystems Dex Team
+Author URI: http://www.outsystems.com
+Version: 1.1
+*/
+
 body {
 background-color:#e6e6e6
 }
@@ -264,7 +273,7 @@ background-repeat:repeat-x
 }
 
 .search_field .button {
-background:url(http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=26072013) no-repeat -1px -1px
+background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=26072013) no-repeat -1px -1px
 }
 
 .header_top {

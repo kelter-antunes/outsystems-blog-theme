@@ -100,7 +100,7 @@ var load_posts = function(){
 		type       : "GET",
 		data       : {pageNumber: page, tag: "<?php echo $selected_category ?>"},
 		dataType   : "html",
-		url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/Outsystems%20Theme/loopHandler.php",
+		url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/outsystems-blog-theme/loopHandler.php",
 		beforeSend : function(){
 		},
 		success    : function(data){
