@@ -10,7 +10,7 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/theme.bootstrapbase.css" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="https://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase&amp;v=20131030114746" charset="UTF-8" />
 	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css&v=20131030114746" charset="UTF-8" />
 	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css&v=20131030114746" charset="UTF-8" />
 	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-css&v=20131030114746" charset="UTF-8" />
