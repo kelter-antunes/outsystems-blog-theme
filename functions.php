@@ -54,6 +54,16 @@ function ostheme_comment( $comment, $args, $depth ) {
 <?php
 }
 
+function ostheme_comment_rss_link($output, $show)
+{
+	if (in_array($show, array('rss_url', 'rss2_url', 'rss', 'rss2', '')))
+		$output = 'http://feedpress.me/outsystems-blog';
+ 
+	return $output;
+}
+add_filter('bloginfo_url', 'ostheme_comment_rss_link', 10, 2);
+add_filter('feed_link', 'ostheme_comment_rss_link', 10, 2);
+
 
 // Widgets part
 /**

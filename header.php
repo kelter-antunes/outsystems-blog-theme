@@ -44,6 +44,12 @@ wp_get_archives( 'type=monthly&format=link' );
 			<div class="navigation-outter">
 				<div class="navigation-inner container">
 					<div class="row">
+						<div style="position: relative; z-index: 9999;height: 30px;text-align: right;">
+							<style>.header-hero-wrapper{padding-top: 0;}.navigation-inner{height: 80px;}.navigation-outter.navigation-wrapper{padding-top: 0px;}
+							</style>
+							<a class="header-contact-us" title="Contact us" alt="Contact us" href="/company/contact-us/">Contact Us</a>
+							<a class="header-login" title="Login" alt="Login" href="/home/login.aspx">Login</a>
+						</div>
 						<div class="navigation-longtail">
 							<div class="span1"></div>
 							<div class="navigation-bar-section navigation-bar-tail-spacer">
@@ -82,7 +88,7 @@ wp_get_archives( 'type=monthly&format=link' );
 								</ul>
 								<div class="navigation-search-outter navigation-bar-section">
 									<div class="search_field">
-										<form name="WebForm1" method="post" action="https://go.pardot.com/s/8492/lEcwHSKRlBn2Q1PadqvCCyTJCzzQSCRs" id="WebForm1">
+										<form name="WebForm1" method="post" action="/blog/wp-content/plugins/kwordpress-mkto/k-wordpress-search-redirect.php" id="WebForm1">
 											<input class="search" name="SearchQuery" type="search" maxlength="256" size="30" />
 											<input class="button" type="submit" name="" value=" " />
 										</form>
