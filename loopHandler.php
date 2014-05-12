@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+
 // Our include
 define( 'WP_USE_THEMES', false );
 require_once '../../../wp-load.php';
