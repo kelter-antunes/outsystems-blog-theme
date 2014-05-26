@@ -30,7 +30,7 @@ endif;
 
 <div class="container">
 	<?php if ( have_posts() ) : ?>
-	<div class="posts">
+	<div class="posts row">
 		<?php
 		while ( have_posts() ) : the_post(); ?>
 		<div class="post span4" onclick="location.href='<?php the_permalink(); ?>'">
