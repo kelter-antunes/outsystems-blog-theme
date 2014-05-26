@@ -37,7 +37,7 @@ query_posts( $qargs );
 if ( have_posts() ) : ?>
 <?php
 while ( have_posts() ) : the_post(); ?>
-<div class="post <?php  ( $idx == 0  || ( $idx % 3 ) == 0 ? print " first" : "" ) ?>" onclick="location.href='<?php the_permalink(); ?>'">
+<div class="post span4" onclick="location.href='<?php the_permalink(); ?>'">
 	<?php if ( has_post_thumbnail() or ( has_category() and !( has_category( get_term_by( 'name', 'Uncategorized', 'category' )->term_id ) ) ) ) : ?>
 	<div class="header">
 		<?php the_post_thumbnail(); ?>

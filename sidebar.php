@@ -7,9 +7,12 @@ global $the_post_id;
 
 global $more;
 $more = 0;
+
+if (is_mobile() ) {
+}else{
 ?>
 
-<div class="sidebar">
+<div class="sidebar span4">
 	<div class="social_share">
 		<!-- AddThis Button BEGIN -->
 		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -101,3 +104,4 @@ $more = 0;
 <?php endwhile; ?>
 </div>
 </div>
+<?php } ?>

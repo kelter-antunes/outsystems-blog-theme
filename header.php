@@ -1,6 +1,7 @@
 <?php
-header( "Access-Control-Allow-Origin: *" ); ?>
-
+header( "Access-Control-Allow-Origin: *" );
+session_start();
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
