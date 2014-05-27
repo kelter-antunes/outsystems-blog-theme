@@ -12,6 +12,21 @@ global $the_author_id;
 global $the_category;
 global $the_post_id;
 ?>
+
+<?php if ( is_mobile() ) {?>
+
+<div class="container">
+	<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+	<div class="feeds_home">
+		<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i><span class="osicon-mail"></span></a>
+	</div>
+	<div class="header_top">
+	</div>
+
+	<?php 
+}
+?>
+
 <div class="container">
 	<?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
@@ -70,7 +85,7 @@ global $the_post_id;
 <?php endwhile; ?>	
 <?php get_sidebar(); ?>	
 <?php endif; ?>
-	</div>
+</div>
 </div>
 
 <?php

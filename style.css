@@ -773,6 +773,7 @@ a.postlink:hover {
 
 	.header-hero-wrapper.home {
 		height: 60px;
+		background: none;
 	}
 
 	.comment-form {
@@ -819,10 +820,12 @@ a.postlink:hover {
 	.header_top {
 		height: auto;
 		margin-top: 15px;
+		text-align: center;
 	}
 	.categories {
-		width: 300px;
+		width: 285px;
 		margin: 0 auto;
+		height: auto;
 	}
 	.categories .toggle {
 		padding: 5px 10px;

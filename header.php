@@ -1,6 +1,13 @@
 <?php
 header( "Access-Control-Allow-Origin: *" );
 session_start();
+
+if ( is_mobile() == false ) {
+	$a =curPageURL();
+	if ( strpos( $a, 'subscribe-our-posts' ) !== false ) {
+		header( "Location: ".get_option( 'home' ) ); /* Redirect browser */
+	}
+}
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

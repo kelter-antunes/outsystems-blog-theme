@@ -9,7 +9,7 @@ endif;
 ?>
 
 <?php
-if ( is_mobile() ) {
+if ( is_mobile() == false ) {
 	?>
 	<div class="container">
 		<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
@@ -57,7 +57,7 @@ if ( is_mobile() ) {
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="http://feedpress.me/outsystems-blog">Subscribe our posts <i class="rss">&nbsp;</i></a>
+			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i></a>
 		</div>
 		<div class="header_top">
 			<div class="categories">
@@ -67,10 +67,10 @@ if ( is_mobile() ) {
 				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;">
 					<a href="/blog/category/platform-in-action"><i class="platform-in-action">&nbsp;</i>&nbsp;Platform in Action</a>
 				</div>
-				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-top: 13px;">
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-top: 13px;padding: 5px 14px;">
 					<a href="/blog/category/perspectives"><i class="perspectives">&nbsp;</i>&nbsp;Perspectives</a>
 				</div>
-				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;margin-top: 13px;padding: 5px 17px;">
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;margin-top: 13px;padding: 5px 15px;">
 					<a href="/blog/category/tech-zone"><i class="tech-zone">&nbsp;</i>&nbsp;Tech Zone</a>
 				</div>
 			</div>	
