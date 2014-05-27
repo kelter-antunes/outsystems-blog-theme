@@ -31,10 +31,11 @@ if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase-responsive&v=20140523120831" charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css&v=20131030114746" charset="UTF-8" />
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css&v=20140523120831" charset="UTF-8">
+
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20140523120831" charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20140523120831" charset="UTF-8">
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 	<script src="/_osjs.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
 	<script src="/_jquery-1-4-2.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
@@ -216,11 +217,6 @@ wp_get_archives( 'type=monthly&format=link' );
 									</span>
 								</ul>
 								<div class="navigation-search-outter navigation-bar-section">
-									<div class="search_field">
-										<input name="wt4$wtheader$wt2$wttxtSearch" type="search" maxlength="256" size="30" id="wt4_wtheader_wt2_wttxtSearch" class="search" onkeydown="return OsEnterKey('wt4_wtheader_wt2_wt12', arguments[0] || window.event)">
-										<span style="display: none;" class="ValidationMessage" id="ValidationMessage_wt4_wtheader_wt2_wttxtSearch"></span>
-										<input type="submit" name="wt4$wtheader$wt2$wt12" value=" " id="wt4_wtheader_wt2_wt12" class="button Is_Default">
-									</div>
 								</div>
 							</div>
 							<div class="navigation-longtail-end"></div>

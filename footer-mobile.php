@@ -76,9 +76,23 @@
     <div class="search-overlay">
       <div class="mobile-search-bar">
         <div class="mobile-search-input">
-          <input name="wt4$wtfooter$wt5$wt2$wt5$wt6" type="search" maxlength="256" size="30" id="wt4_wtfooter_wt5_wt2_wt5_wt6" class="search inpt-search-mobile" placeholder="Search" onkeydown="return OsEnterKey('wt4_wtfooter_wt5_wt2_wt5_wt7', arguments[0] || window.event)">
-          <span style="display: none;" class="ValidationMessage" id="ValidationMessage_wt4_wtfooter_wt5_wt2_wt5_wt6"></span>
-          <input type="submit" name="wt4$wtfooter$wt5$wt2$wt5$wt7" value=" " id="wt4_wtfooter_wt5_wt2_wt5_wt7" class="button Is_Default" style="display:none;">
+
+          <form name="WebForm1" method="post" action="/blog/wp-content/plugins/kwordpress-mkto/k-wordpress-search-redirect.php" id="WebForm1">
+            <input class="search inpt-search-mobile" name="SearchQuery" id="SearchQuery" type="search" maxlength="256" size="30" placeholder="Search" />
+            <input class="button" type="submit" name="submit-search" id="submit-search" value=" " style="display:none;" />
+          </form>
+
+          <script>
+          $( function () {
+            $('#SearchQuery').keyup(function(e){
+              if(e.keyCode == 13)
+              {
+                $('#submit-search').click();
+              }
+            });
+          });
+          </script>
+
         </div>
         <div class="mobile-search-cancel">
           <a id="wt4_wtfooter_wt5_wt2_wt5_wt9" href="#">Cancel</a>

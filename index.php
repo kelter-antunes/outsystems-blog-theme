@@ -8,45 +8,79 @@ else :
 endif;
 ?>
 
-
-<div class="container">
-	<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
-	<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-	<div class="header_top">
-		<div class="categories">
-			<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>">All posts</a></div>
-			<?php
-			$categories = get_categories( '' );
-			foreach ( $categories as $category ) {
-				if ( $category->name != "Uncategorized" ) {
-					echo "<div class='toggle noleftborder"
-					.( $selected_category == strtolower( $category->name ) ? " active" : "" )
-					."'><a href='"
-					.get_category_link( $category->term_id )
-					."'>"
-					."<i class='"
-					.$category->slug
-					."'>&nbsp;</i>&nbsp;"
-					.$category->name.
-					"</a></div>";
+<?php
+if ( is_mobile() ) {
+	?>
+	<div class="container">
+		<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
+		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="header_top">
+			<div class="categories">
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>">All posts</a></div>
+				<?php
+				$categories = get_categories( '' );
+				foreach ( $categories as $category ) {
+					if ( $category->name != "Uncategorized" ) {
+						echo "<div class='toggle noleftborder"
+						.( $selected_category == strtolower( $category->name ) ? " active" : "" )
+						."'><a href='"
+						.get_category_link( $category->term_id )
+						."'>"
+						."<i class='"
+						.$category->slug
+						."'>&nbsp;</i>&nbsp;"
+						.$category->name.
+						"</a></div>";
+					}
 				}
-			}
-			?>
-		</div>
-		<div class="subscription_area">
-			<?php
-			$success = $_GET['aliId'];
-			if( $success != "" )
-				echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
-			else {
-				echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
-				<form id="mktoForm_1119"></form>
-				<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
-			}
-			?>
+				?>
+			</div>
+			<div class="subscription_area">
+				<?php
+				$success = $_GET['aliId'];
+				if( $success != "" )
+					echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+				else {
+					echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
+					<form id="mktoForm_1119"></form>
+					<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
+				}
+				?>
+			</div>
 		</div>
 	</div>
-</div>
+
+	<?php
+} else {
+	?>
+
+	<div class="container">
+		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="feeds_home">
+			<a href="http://feedpress.me/outsystems-blog">Subscribe our posts <i class="rss">&nbsp;</i></a>
+		</div>
+		<div class="header_top">
+			<div class="categories">
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>">
+					<a href="/blog/">All posts</a>
+				</div>
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;">
+					<a href="/blog/category/platform-in-action"><i class="platform-in-action">&nbsp;</i>&nbsp;Platform in Action</a>
+				</div>
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-top: 13px;">
+					<a href="/blog/category/perspectives"><i class="perspectives">&nbsp;</i>&nbsp;Perspectives</a>
+				</div>
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;margin-top: 13px;padding: 5px 17px;">
+					<a href="/blog/category/tech-zone"><i class="tech-zone">&nbsp;</i>&nbsp;Tech Zone</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<?php
+}
+?>
+
 <div class="container">
 	<?php if ( have_posts() ) : ?>
 	<div class="posts row">

@@ -763,6 +763,10 @@ a.postlink:hover {
 
 @media screen and (max-width: 767px) {
 
+	h1 {
+		text-align: center;
+	}
+
 	#footer-wrapper ul[class*="span"] {
 		margin-left: 0;
 	}
@@ -800,5 +804,28 @@ a.postlink:hover {
 		display: none;
 	}
 
+	.mobile-search-input {
+		margin-top: 0 !important;
+	}
+
+	.mobile-search-cancel a {
+		color: #CCC !important;
+	}
+
+	.feeds_home {
+		float: none;
+		text-align: center;
+	}
+	.header_top {
+		height: auto;
+		margin-top: 15px;
+	}
+	.categories {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.categories .toggle {
+		padding: 5px 10px;
+	}
 
 }
