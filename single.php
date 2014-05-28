@@ -18,7 +18,7 @@ global $the_post_id;
 <div class="container">
 	<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 	<div class="feeds_home">
-		<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i><span class="osicon-mail"></span></a>
+		<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
 	</div>
 	<div class="header_top">
 	</div>
@@ -42,6 +42,8 @@ global $the_post_id;
 	if( $category )
 		$the_category = $category->cat_name;
 	?>
+
+<?php if ( is_mobile() == false ) {?>
 	<div class="category">
 		<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> › 
 		<?php if( $category ) : ?>
@@ -49,6 +51,9 @@ global $the_post_id;
 	<?php endif; ?>
 </div>
 
+	<?php 
+}
+?>
 
 <div class="row">
 	<div class="leftbar span8">

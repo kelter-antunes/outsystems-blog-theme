@@ -9,7 +9,6 @@ else :
 endif;
 ?>
 
-
 <?php if ( is_mobile() == false ) {?>
 
 <div class="container">
@@ -41,14 +40,13 @@ endif;
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i><span class="osicon-mail"></span></a>
+			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
 		</div>
 		<div class="header_top">
 			<div class="author">
 				<h3><i></i> Posts by <?php the_author_posts_link(); ?></h3>
 			</div>
 		</div>
-
 
 		<?php 
 	}
@@ -78,7 +76,9 @@ endif;
 					}
 					?>
 				</div>
+
 			<?php endif; ?>
+			
 			<div class="entry">
 				<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<div class="postcontent"><?php the_content(); ?></div>
