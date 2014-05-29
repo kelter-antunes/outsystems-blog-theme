@@ -83,7 +83,7 @@ wp_get_archives( 'type=monthly&format=link' );
 								<div class="menu-back">
 									<div class="Menu_TopMenus">
 										<div id="wt4_wtheader_wt2_wt41_wt1_wt2_wtDropDownButtonRoot" class="Menu_DropDownButton">
-											<div id="wt4_wtheader_wt2_wt41_wt1_wt2_wtDropDownButtonElement" class="Menu_TopMenu Menu_TopMenuActive">
+											<div id="wt4_wtheader_wt2_wt41_wt1_wt2_wtDropDownButtonElement" class="Menu_TopMenu">
 												<span class="menu-active-marker"></span>
 												<div id="wt4_wtheader_wt2_wt41_wt1_wt2_wtMenuItem">
 													<a id="wt4_wtheader_wt2_wt41_wt1_wt2_wtMenuItem_wtmenu_link2" href="/">Home</a>
@@ -122,106 +122,111 @@ wp_get_archives( 'type=monthly&format=link' );
 												<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtDropDownButtonElement" class="Menu_TopMenu">
 													<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtMenuItem">
 														<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtMenuItem_wtmenu_link" href="/company/">About</a>
-														<span id="menu-dropmenu-arrow" class="Menu_DropDownArrow osicon-arrow-down"></span></div>
-													</div>
-													<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtDropDownPanel" class="Menu_DropDownPanel">
-														<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtMenuSubItems" class="Menu_SubItemsPlaceholder">
-															<span id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections" class="ListRecords">
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl00_wt11" href="/company/about/">
-																	<span class="class">Overview</span>
-																</a>
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl02_wt11" href="/company/events/">
-																	<span class="class">Events</span>
-																</a>
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl04_wt11" href="/company/news/">
-																	<span class="class">News</span>
-																</a>
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl06_wt11" href="/company/management-team/">
-																	<span class="class">Management Team</span>
-																</a>
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl08_wt11" href="/company/careers/">
-																	<span class="class">Careers</span>
-																</a>
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl10_wt11" href="/company/investors/">
-																	<span class="class">Investors</span>
-																</a>
-																<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl14_wt11" href="/company/contact-us/">
-																	<span class="class">Offices</span>
-																</a>
-															</span>
-														</div>
 													</div>
 												</div>
-											</span>
-										</div>
+												<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtDropDownPanel" class="Menu_DropDownPanel">
+													<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtMenuSubItems" class="Menu_SubItemsPlaceholder">
+														<span id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections" class="ListRecords">
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl00_wt11" href="/company/about/">
+																<span class="class">Overview</span>
+															</a>
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl02_wt11" href="/company/events/">
+																<span class="class">Events</span>
+															</a>
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl04_wt11" href="/company/news/">
+																<span class="class">News</span>
+															</a>
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl06_wt11" href="/company/management-team/">
+																<span class="class">Management Team</span>
+															</a>
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl08_wt11" href="/company/careers/">
+																<span class="class">Careers</span>
+															</a>
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl10_wt11" href="/company/investors/">
+																<span class="class">Investors</span>
+															</a>
+															<a id="wt2_wtheader_wt14_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl02_wt16" class="active" href="/company/events/">
+																<span class="menu-active-marker-sub"></span>
+																<span class="class">Blog</span>
+															</a>
+															<script>$(function(){$('.Menu_DropDownArrow.osicon-arrow-down').siblings()[0].click();});</script>
+															<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl08_wt10_wtListSections_ctl14_wt11" href="/company/contact-us/">
+																<span class="class">Offices</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</span>
 									</div>
 								</div>
-								<div class="mobile-menu-items">
-									<span class="osicon-search"></span>
-								</div>
-								<div class="MenuSlider_Toggler">
-									<span class="osicon-menu"></span>
-								</div>
-								<script>
-								$(document).ready(function(){
-									setTimeout(function(){
-										$('.osicon-search').bind('click', function(){
-											$('.search-overlay').fadeToggle( 'fast' );
-										});
-										$('.mobile-search-cancel a').bind('click', function(){ $('.search-overlay').fadeToggle(); });
-									}, 500);
-									var toggleMenu = function toggleMenu(e) {
-										$('body').toggleClass('MenuSlider_IsOpen');
-										if (RichWidgets.MenuSlider.onMenuStateChanged) {
-											RichWidgets.MenuSlider.onMenuStateChanged();
-										}
-										e.stopPropagation()
-									};
-									$( '.Application_Menu' ).on( 'swiperight', toggleMenu );
-								});
-								</script>
 							</div>
-							<div class="navigation-items">
-								<ul class="navigation-bar">
-									<span id="wt4_wtheader_wt2_wtListSections">
-										<li>
-											<a id="wt4_wtheader_wt2_wtListSections_ctl00_wt43" href="/platform/">
-												<span class="">How it Works</span>
-											</a>
-										</li>
-										<li class="spacer"></li>
-										<li>
-											<a id="wt4_wtheader_wt2_wtListSections_ctl02_wt43" href="/solutions/">
-												<span class="solutions">Solutions</span>
-											</a>
-										</li>
-										<li class="spacer"></li>
-										<li>
-											<a id="wt4_wtheader_wt2_wtListSections_ctl04_wt43" href="/customers/">
-												<span class="customers">Customers</span>
-											</a>
-										</li>
-										<li class="spacer"></li>
-										<li>
-											<a id="wt4_wtheader_wt2_wtListSections_ctl06_wt43" href="/get-started/">
-												<span class="">Get Started</span>
-											</a>
-										</li>
-										<li class="spacer"></li>
-										<li>
-											<a id="wt4_wtheader_wt2_wtListSections_ctl08_wt43" href="/company/">
-												<span class="">About</span>
-											</a>
-										</li>
-										<li class="spacer"></li>
-									</span>
-								</ul>
-								<div class="navigation-search-outter navigation-bar-section">
-								</div>
+							<div class="mobile-menu-items">
+								<span class="osicon-search"></span>
 							</div>
-							<div class="navigation-longtail-end"></div>
+							<div class="MenuSlider_Toggler">
+								<span class="osicon-menu"></span>
+							</div>
+							<script>
+							$(document).ready(function(){
+								setTimeout(function(){
+									$('.osicon-search').bind('click', function(){
+										$('.search-overlay').fadeToggle( 'fast' );
+									});
+									$('.mobile-search-cancel a').bind('click', function(){ $('.search-overlay').fadeToggle(); });
+								}, 500);
+								var toggleMenu = function toggleMenu(e) {
+									$('body').toggleClass('MenuSlider_IsOpen');
+									if (RichWidgets.MenuSlider.onMenuStateChanged) {
+										RichWidgets.MenuSlider.onMenuStateChanged();
+									}
+									e.stopPropagation()
+								};
+								$( '.Application_Menu' ).on( 'swiperight', toggleMenu );
+							});
+							</script>
 						</div>
+						<div class="navigation-items">
+							<ul class="navigation-bar">
+								<span id="wt4_wtheader_wt2_wtListSections">
+									<li>
+										<a id="wt4_wtheader_wt2_wtListSections_ctl00_wt43" href="/platform/">
+											<span class="">How it Works</span>
+										</a>
+									</li>
+									<li class="spacer"></li>
+									<li>
+										<a id="wt4_wtheader_wt2_wtListSections_ctl02_wt43" href="/solutions/">
+											<span class="solutions">Solutions</span>
+										</a>
+									</li>
+									<li class="spacer"></li>
+									<li>
+										<a id="wt4_wtheader_wt2_wtListSections_ctl04_wt43" href="/customers/">
+											<span class="customers">Customers</span>
+										</a>
+									</li>
+									<li class="spacer"></li>
+									<li>
+										<a id="wt4_wtheader_wt2_wtListSections_ctl06_wt43" href="/get-started/">
+											<span class="">Get Started</span>
+										</a>
+									</li>
+									<li class="spacer"></li>
+									<li>
+										<a id="wt4_wtheader_wt2_wtListSections_ctl08_wt43" href="/company/">
+											<span class="">About</span>
+										</a>
+									</li>
+									<li class="spacer"></li>
+								</span>
+							</ul>
+							<div class="navigation-search-outter navigation-bar-section">
+							</div>
+						</div>
+						<div class="navigation-longtail-end"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>

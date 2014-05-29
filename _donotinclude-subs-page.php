@@ -40,13 +40,31 @@ div.subscription_area {
 }
 .feeds {
 	margin-bottom: 70px;
+	display: none;
 }
 .subscription_area {
 	text-align: left;
 }
+.rss_subscription {
+	margin-bottom: 70px;
+}
+i.rss {
+	display: inline-block;
+	background: url(/blog/wp-content/themes/outsystems-blog-theme/img/icons.png) no-repeat -4px -89px;
+	width: 13px;
+	height: 15px;
+	padding: 0;
+	line-height: 20px;
+}
+a#subs-link {
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	line-height: 30px;
+}
 </style>
 
-E-mail&nbsp;<span class="osicon-mail" style="color: #3498DB">&nbsp;</span>
+<h4>Subscribe by email:</h4>
 <div class="rss_subscription">
 	<div class="subscription_area">
 		[insert_php]
@@ -56,10 +74,14 @@ E-mail&nbsp;<span class="osicon-mail" style="color: #3498DB">&nbsp;</span>
 		else {
 			echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
 			<form id="mktoForm_1119"></form>
-			<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
-		}
-		[/insert_php]
-	</div>
-
-	<div class="feeds"><a href="[insert_php] bloginfo( 'rss2_url' ); [/insert_php]">Subscribe RSS&nbsp;<i class="rss">&nbsp;</i></a></div>
+			<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119, function(form){
+				$("#subs-link").detach().appendTo(".mktoButtonRow");
+			});
+		</script>';
+	}
+	[/insert_php]
+</div>
+<div class="feeds">
+	<a id="subs-link" href="[insert_php] bloginfo( 'rss2_url' ); [/insert_php]">or subscribe RSS&nbsp;<i class="rss">&nbsp;</i></a>
+</div>
 </div>

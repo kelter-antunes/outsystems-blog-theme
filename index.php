@@ -57,7 +57,7 @@ if ( is_mobile() == false ) {
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
+			<a href="/blog/subscribe-our-posts">Subscribe our posts with <span class="osicon-mail" style="margin-right: -3px; font-size: 12.5px;">&nbsp;</span>or <i class="rss">&nbsp;</i>&nbsp;</a>
 		</div>
 		<div class="header_top">
 			<div class="categories">
