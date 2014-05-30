@@ -1,4 +1,3 @@
-
 <div id="comments">
 	<?php if ( have_comments() ) : ?>
 		<h3>Comments</h3>
