@@ -82,6 +82,6 @@ a#subs-link {
 	[/insert_php]
 </div>
 <div class="feeds">
-	<a id="subs-link" href="[insert_php] bloginfo( 'rss2_url' ); [/insert_php]">or subscribe RSS&nbsp;<i class="rss">&nbsp;</i></a>
+	<a id="subs-link" href="[insert_php] bloginfo( 'rss2_url' ); [/insert_php]">or subscribe by RSS&nbsp;<i class="rss">&nbsp;</i></a>
 </div>
 </div>
