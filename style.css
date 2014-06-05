@@ -34,10 +34,15 @@ a:hover {
 	color:#5f5f5f
 }
 
+#submenu-solutions a {
+	color: #0088cc;
+	text-decoration: none
+}
+
 .byline {
 	font-size: 12px;
 	line-height: 17px;
-	color: #808080;
+	color: #808080
 }
 
 .byline a {
