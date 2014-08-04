@@ -1,4 +1,4 @@
-<div class="top70">
+<div class="top70" data-swiftype-index="false">
 	<div class="top50">
 		<div id="footer-wrapper">
 			<div id="footer-mid-wrapper">

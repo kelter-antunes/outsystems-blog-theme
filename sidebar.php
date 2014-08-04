@@ -12,7 +12,7 @@ if (is_mobile() ) {
 }else{
 ?>
 
-<div class="sidebar span4">
+<div class="sidebar span4" data-swiftype-index="false">
 	<div class="social_share">
 		<!-- AddThis Button BEGIN -->
 		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
