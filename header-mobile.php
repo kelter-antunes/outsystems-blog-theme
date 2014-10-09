@@ -27,13 +27,13 @@ if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=font-css.css&v=20140422180109" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase-responsive&v=20140523120831" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css&v=20131030114746" charset="UTF-8" />
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css&v=20140523120831" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=font-css.css&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase-responsive&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css&v=20141008115802" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css&v=20141008115802" charset="UTF-8">
 
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20140523120831" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20140523120831" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20141008115802" charset="UTF-8">
 
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -64,7 +64,7 @@ wp_get_archives( 'type=monthly&format=link' );
 </head>
 <body>
 
-	<div id="wt4_wtheader_hero_wrapper" class="header-hero-wrapper home">
+	<div class="header-hero-wrapper home">
 		<div class="navigation-outter">
 			<div class="navigation-inner container">
 				<div id="wt4_wtheader" class="row">
@@ -94,7 +94,7 @@ wp_get_archives( 'type=monthly&format=link' );
 											<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl00_wt10_wtDropDownButtonRoot" class="Menu_DropDownButton">
 												<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl00_wt10_wtDropDownButtonElement" class="Menu_TopMenu">
 													<div id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl00_wt10_wtMenuItem">
-														<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl00_wt10_wtMenuItem_wtmenu_link" href="/platform/">How it Works</a>
+														<a id="wt4_wtheader_wt2_wt41_wt1_wtListSections_ctl00_wt10_wtMenuItem_wtmenu_link" href="/platform/">Platform</a>
 													</div>
 												</div>
 											</div>

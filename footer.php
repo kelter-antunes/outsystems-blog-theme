@@ -95,16 +95,12 @@
 			</div>
 		</div>
 	</div>
-	<div style="display:none;">
-		<a class="popup_link" href="http://www.outsystems.com/contact-us-pricing-info/">contact pricing</a>
-		<a class="popup_link" href="http://www.outsystems.com/try/contact-us/">contact try</a>
-	</div>
 
 	<script type="text/javascript">
 	$( document ).ready(function() {
 
 
-		$.getJSON( "http://www.outsystems.com/CorporateSite/Footer.aspx", function( data ) {
+		$.getJSON( "https://www.outsystems.com/footer.aspx", function( data ) {
 			if(data.locale)
 				$('#footer-mid').addClass(data.locale);
 			if(data.events)

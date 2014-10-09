@@ -64,6 +64,17 @@ add_filter( 'bloginfo_url', 'ostheme_comment_rss_link', 10, 2 );
 add_filter( 'feed_link', 'ostheme_comment_rss_link', 10, 2 );
 
 
+
+add_filter('the_content', 'my_addlightboxrel');
+function my_addlightboxrel($content) {
+	global $post;
+	$pattern ="/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
+	$replacement = '<a$1href=$2$3.$4$5 rel="lightbox" title="'.$post->post_title.'"$6>';
+	$content = preg_replace($pattern, $replacement, $content);
+	return $content;
+}
+
+
 // Widgets part
 /**
  * Register our sidebars and widgetized areas.
@@ -71,12 +82,12 @@ add_filter( 'feed_link', 'ostheme_comment_rss_link', 10, 2 );
  */
 function arphabet_widgets_init() {
 	register_sidebar( array(
-			'name' => '',
-			'id' => '',
-			'before_widget' => '<div>',
-			'after_widget' => '</div>',
-			'before_title' => '<h2 class="rounded">',
-			'after_title' => '</h2>',
+		'name' => '',
+		'id' => '',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
 		) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
