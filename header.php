@@ -33,6 +33,8 @@ if ( is_mobile() == false ) {
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 
+
+
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript">
 	/** dropdown menus **/

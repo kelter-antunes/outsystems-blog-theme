@@ -35,6 +35,77 @@ if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20141008115802" charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20141008115802" charset="UTF-8">
 
+	<style>
+		body {
+			background: none;
+			background-color: #e6e6e6;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		#footer-wrapper ul[class*="span"] {
+			margin-left: 0;
+		}
+
+		.header-hero-wrapper.home {
+			height: 60px;
+			background: none;
+		}
+
+		.comment-form {
+			width: 100%;
+		}
+		.comment-form > div, .comment-form > p {
+			width: 100%;
+		}
+		.forminput {
+			margin-left: 0;
+			width: 100%;
+		}
+		.forminput textarea {
+			width: 100%;
+		}
+
+		.forminput input[type="text"] {
+			width: 100%;
+		}
+
+		.author_data {
+			margin-left: 0px;
+		}
+		.author_photo {
+			margin-right: 10px;
+		}
+
+		.mobile-search-input {
+			margin-top: 0 !important;
+		}
+
+		.mobile-search-cancel a {
+			color: #CCC !important;
+		}
+
+		.feeds_home {
+			float: none;
+			text-align: center;
+		}
+		.header_top {
+			height: auto;
+			margin-top: 15px;
+			text-align: center;
+		}
+		.categories {
+			width: 285px;
+			margin: 0 auto;
+			height: auto;
+		}
+		.categories .toggle {
+			padding: 5px 10px;
+		}
+	</style>
+
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 	<script src="/_osjs.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
@@ -168,22 +239,22 @@ wp_get_archives( 'type=monthly&format=link' );
 								<span class="osicon-menu"></span>
 							</div>
 							<script>
-							$(document).ready(function(){
-								setTimeout(function(){
-									$('.osicon-search').bind('click', function(){
-										$('.search-overlay').fadeToggle( 'fast' );
-									});
-									$('.mobile-search-cancel a').bind('click', function(){ $('.search-overlay').fadeToggle(); });
-								}, 500);
-								var toggleMenu = function toggleMenu(e) {
-									$('body').toggleClass('MenuSlider_IsOpen');
-									if (RichWidgets.MenuSlider.onMenuStateChanged) {
-										RichWidgets.MenuSlider.onMenuStateChanged();
-									}
-									e.stopPropagation()
-								};
-								$( '.Application_Menu' ).on( 'swiperight', toggleMenu );
-							});
+								$(document).ready(function(){
+									setTimeout(function(){
+										$('.osicon-search').bind('click', function(){
+											$('.search-overlay').fadeToggle( 'fast' );
+										});
+										$('.mobile-search-cancel a').bind('click', function(){ $('.search-overlay').fadeToggle(); });
+									}, 500);
+									var toggleMenu = function toggleMenu(e) {
+										$('body').toggleClass('MenuSlider_IsOpen');
+										if (RichWidgets.MenuSlider.onMenuStateChanged) {
+											RichWidgets.MenuSlider.onMenuStateChanged();
+										}
+										e.stopPropagation()
+									};
+									$( '.Application_Menu' ).on( 'swiperight', toggleMenu );
+								});
 							</script>
 						</div>
 						<div class="navigation-items">

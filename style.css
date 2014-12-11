@@ -490,6 +490,11 @@ a.postlink:hover {
 	color:#3498DB!important
 }
 
+.post.span4 .postcontent img {
+	display: none;
+	visibility: hidden;
+}
+
 .fullpost {
 	background-color:#FFF;
 	padding:30px
@@ -565,6 +570,10 @@ a.postlink:hover {
 	padding:15px;
 	width:275px;
 	margin-bottom:20px
+}
+
+.sidebar .postcontent img {
+	display: none;
 }
 
 .author_photo {
@@ -764,78 +773,4 @@ a.postlink:hover {
 
 .social_share {
 	text-align:center
-}
-
-
-@media screen and (max-width: 767px) {
-
-	body {
-		background: none;
-		background-color: #e6e6e6;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	#footer-wrapper ul[class*="span"] {
-		margin-left: 0;
-	}
-
-	.header-hero-wrapper.home {
-		height: 60px;
-		background: none;
-	}
-
-	.comment-form {
-		width: 100%;
-	}
-	.comment-form > div, .comment-form > p {
-		width: 100%;
-	}
-	.forminput {
-		margin-left: 0;
-		width: 100%;
-	}
-	.forminput textarea {
-		width: 100%;
-	}
-
-	.forminput input[type="text"] {
-		width: 100%;
-	}
-
-	.author_data {
-		margin-left: 0px;
-	}
-	.author_photo {
-		margin-right: 10px;
-	}
-
-	.mobile-search-input {
-		margin-top: 0 !important;
-	}
-
-	.mobile-search-cancel a {
-		color: #CCC !important;
-	}
-
-	.feeds_home {
-		float: none;
-		text-align: center;
-	}
-	.header_top {
-		height: auto;
-		margin-top: 15px;
-		text-align: center;
-	}
-	.categories {
-		width: 285px;
-		margin: 0 auto;
-		height: auto;
-	}
-	.categories .toggle {
-		padding: 5px 10px;
-	}
-
 }
