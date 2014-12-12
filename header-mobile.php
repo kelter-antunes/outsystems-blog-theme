@@ -35,6 +35,21 @@ if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20141008115802" charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20141008115802" charset="UTF-8">
 
+	
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+	<script src="/_osjs.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
+	<script src="/_jquery-1-4-2.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
+	<script src="/Blocks/CorporateSite/simplify_responsive/DropDownMenu.js?18547" type="text/javascript" charset="UTF-8"></script>
+	<script src="/Blocks/CorporateSite/simplify_responsive/MenuSlider.js?18547" type="text/javascript" charset="UTF-8"></script>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.waitforimages.js"></script>
+
+	<script type="text/javascript" src="//use.typekit.net/jlz7hji.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<style>
 		body {
 			background: none;
@@ -106,20 +121,6 @@ if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 		}
 	</style>
 
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
-	<script src="/_osjs.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
-	<script src="/_jquery-1-4-2.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
-	<script src="/Blocks/CorporateSite/simplify_responsive/DropDownMenu.js?18547" type="text/javascript" charset="UTF-8"></script>
-	<script src="/Blocks/CorporateSite/simplify_responsive/MenuSlider.js?18547" type="text/javascript" charset="UTF-8"></script>
-
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/masonry.pkgd.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.waitforimages.js"></script>
-
-	<script type="text/javascript" src="//use.typekit.net/jlz7hji.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<?php
 /*
