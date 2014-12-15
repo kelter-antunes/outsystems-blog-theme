@@ -23,12 +23,14 @@ if (is_mobile() ) {
 				<a class="addthis_counter addthis_bubble_style"></a>
 			</div>
 			<!-- AddThis Button END -->
-			<!-- AddThis twitter config -->
+
+			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
 			<script type="text/javascript">
-			var addthis_share = {
-				templates: { twitter : "{{url}} (via @<?php the_author_meta( 'twitter' ); ?>)" }
-			}
+				var titleNew = document.title + '- via @<?php the_author_meta( "twitter" ); }?>';
+				addthis.update('share', 'title', titleNew);
 			</script>
+			<?php } ?>
+
 		</div>
 		<div class="rss_subscription">
 			<div class="subscription_area">
@@ -79,34 +81,34 @@ if (is_mobile() ) {
 			<?php /*if( get_the_ID() != $the_post_id ) : */?>
 			<div class="post<?php  ( $idx == 0  || $idx % 3 == 0 ? print " first" : "" ) ?>" onclick="location.href='<?php the_permalink(); ?>'">
 				<?php if ( has_post_thumbnail() or ( has_category() and !( has_category( get_term_by( 'name', 'Uncategorized', 'category' )->term_id ) ) ) ) : ?>
-				<div class="header">
-					<?php the_post_thumbnail(); ?>
-					<?php
-					$postcats = get_the_category();
-					if ( $postcats ) {
-						foreach ( $postcats as $postcat ) {
-							if ( $postcat->name != "Uncategorized" ) {
-								echo '<div class="category byline '
-								. $postcat->slug
-								. '"><i>&nbsp;</i>&nbsp;'
-								. $postcat->name
-								. '</div>';
+					<div class="header">
+						<?php the_post_thumbnail(); ?>
+						<?php
+						$postcats = get_the_category();
+						if ( $postcats ) {
+							foreach ( $postcats as $postcat ) {
+								if ( $postcat->name != "Uncategorized" ) {
+									echo '<div class="category byline '
+									. $postcat->slug
+									. '"><i>&nbsp;</i>&nbsp;'
+									. $postcat->name
+									. '</div>';
+								}
 							}
 						}
-					}
-					?>
+						?>
+					</div>
+				<?php endif; ?>
+				<div class="entry">
+					<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<div class="postcontent"><?php the_content(); ?></div>
+					<p class="postmetadata byline">
+						By <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+					</p>
 				</div>
-			<?php endif; ?>
-			<div class="entry">
-				<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<div class="postcontent"><?php the_content(); ?></div>
-				<p class="postmetadata byline">
-					By <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
-				</p>
 			</div>
-		</div>
-		<?php /*endif;*/ ?>
-	<?php endwhile; ?>
-</div>
+			<?php /*endif;*/ ?>
+		<?php endwhile; ?>
+	</div>
 </div>
 <?php } ?>

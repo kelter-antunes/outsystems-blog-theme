@@ -19,9 +19,7 @@ if ( is_mobile() == false ) {
 
 	<meta class='swiftype' name='type' data-type='enum' content='blog' />
 
-	<title>
-		<?php bloginfo( 'name' ); ?> <?php wp_title (); ?>
-	</title>
+	<title><?php bloginfo( 'name' ); ?> <?php wp_title (); ?></title>
 
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
