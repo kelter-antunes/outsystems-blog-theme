@@ -43,7 +43,7 @@ global $the_post_id;
 		$the_category = $category->cat_name;
 	?>
 
-<?php if ( is_mobile() == false ) {?>
+	<?php if ( is_mobile() == false ) {?>
 	<div class="category">
 		<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> › 
 		<?php if( $category ) : ?>
@@ -51,7 +51,7 @@ global $the_post_id;
 	<?php endif; ?>
 </div>
 
-	<?php 
+<?php 
 }
 ?>
 
@@ -79,14 +79,19 @@ global $the_post_id;
 					<div class="author_about">About the author</div>
 					<div class="author_name"><h4><?php echo $the_author_name; ?></h4></div>
 					<div class="author_bio"><?php echo $the_author_description; ?></div>
-				</div>
-				<div style="clear:both"></div>
+					<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+						<p class="twitter clear">
+							[twitter-follow screen_name='<?php the_author_meta( 'twitter' ); ?>']
+						</p>
+					<?php } // End check for twitter ?>
 			</div>
+			<div style="clear:both"></div>
 		</div>
-		<div class="comments-template">
-			<?php comments_template('/comments.php'); ?>
-		</div>				
 	</div>
+	<div class="comments-template">
+		<?php comments_template('/comments.php'); ?>
+	</div>				
+</div>
 <?php endwhile; ?>	
 <?php get_sidebar(); ?>	
 <?php endif; ?>
