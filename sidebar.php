@@ -26,7 +26,7 @@ if (is_mobile() ) {
 
 			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
 			<script type="text/javascript">
-				var titleNew = document.title + '- via @<?php the_author_meta( "twitter" ); }?>';
+				var titleNew = document.title + "- via @<?php the_author_meta( 'twitter' ); ?>";
 				addthis.update('share', 'title', titleNew);
 			</script>
 			<?php } ?>
