@@ -18,7 +18,7 @@ global $the_post_id;
 <div class="container">
 	<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 	<div class="feeds_home">
-		<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
+		<a href="/blog/subscribe-our-posts"><?php _e("Subscribe our posts","outsystems_blog");?> <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
 	</div>
 	<div class="header_top">
 	</div>
@@ -60,7 +60,7 @@ global $the_post_id;
 				<div class="fullpost">
 					<h2><?php the_title(); ?></h2>
 					<p class="postmetadata byline">
-						By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+						<?php _e("By","outsystems_blog");?> <?php  the_author_posts_link(); ?> <?php _e("on","outsystems_blog");?> <?php echo get_the_date(); ?>
 					</p>
 					<div class="postcontent"><?php the_content(); ?></div>
 					<?php
@@ -76,7 +76,7 @@ global $the_post_id;
 							</style>
 						</div>
 						<div class="author_data">
-							<div class="author_about">About the author</div>
+							<div class="author_about"><?php _e("About the author","outsystems_blog");?></div>
 							<div class="author_name"><h4><?php echo $the_author_name; ?></h4></div>
 							<div class="author_bio"><?php echo $the_author_description; ?></div>
 							<?php if ( get_the_author_meta( 'twitter' ) ) { ?>

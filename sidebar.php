@@ -37,7 +37,7 @@ if (is_mobile() ) {
 				<?php
 				$success = $_GET['aliId'];
 				if( $success != "" )
-					echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+					echo '<div class="subscribed">'. __("Thank you for subscribing to our blog!","outsystems_blog").'</div>';
 				else {
 					echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
 					<form id="mktoForm_1119"></form>
@@ -46,11 +46,11 @@ if (is_mobile() ) {
 				?>
 			</div>
 
-			<div class="feeds"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
+			<div class="feeds"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> <?php _e("Subscribe RSS","outsystems_blog");?></a></div>
 		</div>
 
 		<div class="more_posts">
-			<h4>Explore other categories:</h4>
+			<h4><?php _e("Explore other categories:","outsystems_blog");?></h4>
 			<div class="categories">
 				<!--<div class="toggle <?php ( $the_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>">All Posts</a></div>-->
 				<?php
@@ -75,7 +75,7 @@ if (is_mobile() ) {
 		</div>
 
 		<div class="more_posts_category">
-			<h4>More posts in this category:</h4>
+			<h4><?php _e("More posts in this category:","outsystems_blog");?></h4>
 			<?php query_posts( array ( 'category_name' => $the_category, 'posts_per_page' => 3, 'post__not_in' => array( $the_post_id )  ) );
 			while ( have_posts() ) : the_post(); ?>
 			<?php /*if( get_the_ID() != $the_post_id ) : */?>

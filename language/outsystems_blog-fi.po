@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Outsystems blog\n"
+"POT-Creation-Date: 2015-01-21 19:04-0000\n"
+"PO-Revision-Date: 2015-01-21 19:05-0000\n"
+"Last-Translator: Nick <piranya87@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:18
+msgid "Name"
+msgstr "﻿Nimi"
+
+#: ../comments.php:24
+msgid "E-mail"
+msgstr ""
+
+#: ../comments.php:30
+msgid "URL"
+msgstr ""
+
+#: ../comments.php:39
+msgid "Leave Your Comment"
+msgstr ""
+
+#: ../comments.php:40
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:41
+msgid "Submit"
+msgstr "﻿Sano"
+
+#: ../functions.php:39
+#, php-format
+msgid "<h5><span class=\"fn\">%s<span></h5>"
+msgstr ""
+
+#: ../functions.php:42
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: ../functions.php:50
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:50
+msgid "(Edit)"
+msgstr ""
+
+#: ../index.php:15
+msgid "Subscribe RSS"
+msgstr "﻿Tilaa RSS-syöte"
+
+#: ../index.php:19 ../index.php:65
+msgid "All posts"
+msgstr "﻿Kaikki artikkelit"
+
+#: ../index.php:42
+msgid "Thank you for subscribing to our blog!"
+msgstr ""
+
+#: ../index.php:60
+msgid "Subscribe our posts with"
+msgstr ""
+
+#: ../index.php:60
+msgid "or"
+msgstr ""
+
+#: ../index.php:68
+msgid "Platform in Action"
+msgstr ""
+
+#: ../index.php:71
+msgid "Perspectives"
+msgstr ""
+
+#: ../index.php:74
+msgid "Tech Zone"
+msgstr ""
+
+#: ../index.php:124
+msgid "Load more..."
+msgstr "﻿Lataa lisää"
+
+#: ../index.php:125
+msgid "Loading"
+msgstr "﻿Lataaminen"
+
+#: ../index.php:126
+msgid "Error loading more posts."
+msgstr "﻿Virhe ladattaessa palvelua"
+
+#: ../loopHandler.php:64 ../single.php:63
+msgid "By"
+msgstr ""
+
+#: ../loopHandler.php:64 ../single.php:63
+msgid "on"
+msgstr ""
+
+#: ../page.php:18
+msgid "Filed under&#58;"
+msgstr ""
+
+#: ../page.php:18
+msgid "by"
+msgstr ""
+
+#: ../single.php:21
+msgid "Subscribe our posts"
+msgstr ""
+
+#: ../single.php:79
+msgid "About the author"
+msgstr ""

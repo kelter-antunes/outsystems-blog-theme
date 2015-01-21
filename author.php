@@ -22,7 +22,7 @@ endif;
 			<?php
 			$success = $_GET['aliId'];
 			if( $success != "" )
-				echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+				echo '<div class="subscribed">'.__("Thank you for subscribing to our blog!","outsystems_blog").'</div>';
 			else {
 				echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
 				<form id="mktoForm_1119"></form>
@@ -40,7 +40,7 @@ endif;
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
+			<a href="/blog/subscribe-our-posts"><?php _e("Subscribe our posts","outsystems_blog");?> <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
 		</div>
 		<div class="header_top">
 			<div class="author">
@@ -83,7 +83,7 @@ endif;
 				<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<div class="postcontent"><?php the_content(); ?></div>
 				<p class="postmetadata byline">
-					By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+					<?php _e("By","outsystems_blog");?> <?php  the_author_posts_link(); ?> <?php _e("on","outsystems_blog");?> <?php echo get_the_date(); ?>
 				</p>
 			</div>
 		</div>

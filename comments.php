@@ -1,6 +1,6 @@
 <div id="comments">
 	<?php if ( have_comments() ) : ?>
-		<h3>Comments</h3>
+		<h3><?php _e("Comments","outsystems_blog");?></h3>
 		<div class="commentlist">
 			<?php wp_list_comments(
 					array(

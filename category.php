@@ -14,11 +14,11 @@ endif;
 if ( is_mobile() == false ) {
 	?>
 	<div class="container">
-		<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
+		<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> <?php _e("Subscribe RSS","outsystems_blog");?></a></div>
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="header_top">
 			<div class="categories">
-				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>">All posts</a></div>
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>"><?php _e("All posts","outsystems_blog");?></a></div>
 				<?php
 				$categories = get_categories( '' );
 				foreach ( $categories as $category ) {
@@ -41,7 +41,7 @@ if ( is_mobile() == false ) {
 				<?php
 				$success = $_GET['aliId'];
 				if( $success != "" )
-					echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+					echo '<div class="subscribed">'.__("Thank you for subscribing to our blog!","outsystems_blog").'</div>';
 				else {
 					echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
 					<form id="mktoForm_1119"></form>
@@ -59,7 +59,7 @@ if ( is_mobile() == false ) {
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
+			<a href="/blog/subscribe-our-posts"><?php _e("Subscribe our posts","outsystems_blog");?> <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
 		</div>
 		<div class="header_top">
 			<div class="categories">

@@ -1,6 +1,12 @@
 <?php
 
 
+add_action('after_setup_theme', 'outsystems_theme_setup');
+function outsystems_theme_setup(){
+	load_theme_textdomain( 'outsystems_blog');
+}
+
+
 //Code for custom background support
 add_custom_background();
 
@@ -122,16 +128,16 @@ add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
 
 function my_show_extra_profile_fields( $user ) { ?>
 
-	<h3>Extra profile information</h3>
+	<h3><?php _e("Extra profile information","outsystems_blog");?></h3>
 
 	<table class="form-table">
 
 		<tr>
-			<th><label for="twitter">Twitter</label></th>
+			<th><label for="twitter"><?php _e("Twitter","outsystems_blog");?></label></th>
 
 			<td>
 				<input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
-				<span class="description">Please enter your Twitter username.</span>
+				<span class="description"><?php _e("Please enter your Twitter username.","outsystems_blog");?></span>
 			</td>
 		</tr>
 
@@ -151,6 +157,5 @@ function my_save_extra_profile_fields( $user_id ) {
 	update_usermeta( $user_id, 'twitter', $_POST['twitter'] );
 }
 
-?>
 
 

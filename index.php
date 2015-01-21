@@ -1,5 +1,11 @@
 <?php $selected_category = '' ?>
+<?php
+/* if we need to load specific scripts or code depending on locale use WPLANG option to check
+ * get_option('WPLANG');
+ */
 
+
+?>
 <?php
 if ( is_mobile() ) :
 	get_header( 'mobile' );
@@ -12,11 +18,11 @@ endif;
 if ( is_mobile() == false ) {
 	?>
 	<div class="container">
-		<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
+		<div class="feeds_home"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> <?php _e("Subscribe RSS","outsystems_blog");?></a></div>
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="header_top">
 			<div class="categories">
-				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>">All posts</a></div>
+				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>"><?php _e("All posts","outsystems_blog");?></a></div>
 				<?php
 				$categories = get_categories( '' );
 				foreach ( $categories as $category ) {
@@ -39,7 +45,7 @@ if ( is_mobile() == false ) {
 				<?php
 				$success = $_GET['aliId'];
 				if( $success != "" )
-					echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
+					echo '<div class="subscribed">'.__("Thank you for subscribing to our blog!","outsystems_blog").'</div>';
 				else {
 					echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
 					<form id="mktoForm_1119"></form>
@@ -57,21 +63,21 @@ if ( is_mobile() == false ) {
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="/blog/subscribe-our-posts">Subscribe our posts with <span class="osicon-mail" style="margin-right: -3px; font-size: 12.5px;">&nbsp;</span>or <i class="rss">&nbsp;</i>&nbsp;</a>
+			<a href="/blog/subscribe-our-posts"><?php _e("Subscribe our posts with","outsystems_blog");?> <span class="osicon-mail" style="margin-right: -3px; font-size: 12.5px;">&nbsp;</span><?php _e("or","outsystems_blog");?> <i class="rss">&nbsp;</i>&nbsp;</a>
 		</div>
 		<div class="header_top">
 			<div class="categories">
 				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>">
-					<a href="/blog/">All posts</a>
+					<a href="/blog/"><?php _e("All posts","outsystems_blog");?></a>
 				</div>
 				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;">
-					<a href="/blog/category/platform-in-action"><i class="platform-in-action">&nbsp;</i>&nbsp;Platform in Action</a>
+					<a href="/blog/category/platform-in-action"><i class="platform-in-action">&nbsp;</i>&nbsp;<?php _e("Platform in Action","outsystems_blog");?></a>
 				</div>
 				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-top: 13px;padding: 5px 14px;">
-					<a href="/blog/category/perspectives"><i class="perspectives">&nbsp;</i>&nbsp;Perspectives</a>
+					<a href="/blog/category/perspectives"><i class="perspectives">&nbsp;</i>&nbsp;<?php _e("Perspectives","outsystems_blog");?></a>
 				</div>
 				<div class="toggle <?php ( $selected_category == '' ? print " active" : "" ) ?>" style="margin-left: 13px;margin-top: 13px;padding: 5px 15px;">
-					<a href="/blog/category/tech-zone"><i class="tech-zone">&nbsp;</i>&nbsp;Tech Zone</a>
+					<a href="/blog/category/tech-zone"><i class="tech-zone">&nbsp;</i>&nbsp;<?php _e("Tech Zone","outsystems_blog");?></a>
 				</div>
 			</div>	
 		</div>
@@ -111,7 +117,7 @@ if ( is_mobile() == false ) {
 			<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<div class="postcontent"><?php the_content(); ?></div>
 			<p class="postmetadata byline">
-				By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+				<?php _e("By","outsystems_blog");?> <?php  the_author_posts_link(); ?> <?php _e("on","outsystems_blog");?> <?php echo get_the_date(); ?>
 			</p>
 		</div>
 	</div>
@@ -121,9 +127,9 @@ if ( is_mobile() == false ) {
 </div>
 
 <div class="LoadBox">
-	<div id="LoadMoreDiv" ><a href="javascript:load_posts();">Load more...</a></div>
-	<div id="LoadingDiv" style="display: none;">Loading</div>
-	<div id="LoadingError"  style="display: none;">Error loading more posts.</div>
+	<div id="LoadMoreDiv" ><a href="javascript:load_posts();"><?php _e("Load more...","outsystems_blog");?></a></div>
+	<div id="LoadingDiv" style="display: none;"><?php _e("Loading","outsystems_blog");?></div>
+	<div id="LoadingError"  style="display: none;"><?php _e("Error loading more posts.","outsystems_blog");?></div>
 </div>
 <?php endif; ?>
 </div>
