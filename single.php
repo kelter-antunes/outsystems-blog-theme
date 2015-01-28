@@ -62,7 +62,7 @@ global $the_post_id;
 					<p class="postmetadata byline">
 						<?php _e("By","outsystems_blog");?> <?php  the_author_posts_link(); ?> <?php _e("on","outsystems_blog");?> <?php echo get_the_date(); ?>
 					</p>
-					<div class="postcontent"><?php the_content(); ?></div>
+					<div class="postcontent"><?php post_intro($post); ?></div>
 					<?php
 					echo get_the_tag_list('<div class="tags"><i></i> ','','</div>');
 					?>

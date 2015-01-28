@@ -101,7 +101,7 @@ if (is_mobile() ) {
 				<?php endif; ?>
 				<div class="entry">
 					<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<div class="postcontent"><?php the_content(); ?></div>
+					<div class="postcontent"><?php post_intro($post); ?></div>
 					<p class="postmetadata byline">
 						By <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
 					</p>

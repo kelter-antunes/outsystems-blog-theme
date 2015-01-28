@@ -158,4 +158,10 @@ function my_save_extra_profile_fields( $user_id ) {
 }
 
 
-
+function post_intro($post){
+ if (!is_single() && $post->post_excerpt!=""){
+	echo $post->post_excerpt;
+} else {
+	the_content();
+}
+}
