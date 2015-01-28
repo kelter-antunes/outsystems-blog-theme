@@ -2,8 +2,9 @@
 
 
 add_action('after_setup_theme', 'outsystems_theme_setup');
+
 function outsystems_theme_setup(){
-	load_theme_textdomain( 'outsystems_blog');
+	load_theme_textdomain( 'outsystems_blog',get_template_directory() . '/language');
 }
 
 
@@ -163,5 +164,7 @@ function post_intro($post){
 	echo $post->post_excerpt;
 } else {
 	the_content();
+
+	 echo stripslashes(get_option('append_to_post'));
 }
 }

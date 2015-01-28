@@ -1,0 +1,581 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Outsystems Blog Theme v1.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-27 10:55-0000\n"
+"PO-Revision-Date: 2015-01-28 16:17:30+0000\n"
+"Last-Translator: Nick <piranya87@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:13
+#@ outsystems_blog
+msgid "Page not found!"
+msgstr "Sivua ei löytynyt!"
+
+#: 404.php:14
+#@ outsystems_blog
+msgid "Oops! It seems that the page you're looking for is not here anymore!"
+msgstr "Hups! Näyttää siltä, että sivu etsit ei ole täällä enää!"
+
+#: 404.php:15
+#@ outsystems_blog
+msgid "It might have moved or the URL you typed is not correct."
+msgstr "Se ehkä siirretty tai URL kirjoittamasi ei ole oikein."
+
+#: 404.php:17
+#@ outsystems_blog
+msgid "Were you hoping to find anything here?"
+msgstr "Olitko toivoen löytävänsä mitään täällä?"
+
+#: 404.php:17
+#@ outsystems_blog
+msgid "Drop us a message to let us know..."
+msgstr "Lähettää meille viesti kertoa meille ..."
+
+#: author.php:25
+#: category.php:44
+#: index.php:48
+#: sidebar.php:40
+#: tag.php:28
+#@ outsystems_blog
+msgid "Thank you for subscribing to our blog!"
+msgstr "Kiitos tilaamalla blogi!"
+
+#: author.php:43
+#: category.php:62
+#: single.php:21
+#: tag.php:46
+#@ outsystems_blog
+msgid "Subscribe our posts"
+msgstr "Tilaa meidän virkaa"
+
+#: author.php:86
+#: index.php:122
+#: loopHandler.php:64
+#: single.php:63
+#@ outsystems_blog
+msgid "By"
+msgstr "Mukaan"
+
+#: author.php:86
+#: index.php:122
+#: loopHandler.php:64
+#: single.php:63
+#@ outsystems_blog
+msgid "on"
+msgstr "päällä"
+
+#: category.php:17
+#: index.php:21
+#: sidebar.php:49
+#: tag.php:18
+#@ outsystems_blog
+msgid "Subscribe RSS"
+msgstr "﻿Tilaa RSS-syöte"
+
+#: category.php:21
+#: index.php:25
+#: index.php:71
+#@ outsystems_blog
+msgid "All posts"
+msgstr "﻿Kaikki artikkelit"
+
+#: comments.php:3
+#@ outsystems_blog
+msgid "Comments"
+msgstr "Kommentit"
+
+#: comments.php:18
+#@ domainreference
+msgid "Name"
+msgstr "﻿Nimi"
+
+#: comments.php:24
+#@ domainreference
+msgid "E-mail"
+msgstr ""
+
+#: comments.php:30
+#@ domainreference
+msgid "URL"
+msgstr ""
+
+#: comments.php:39
+#@ default
+msgid "Leave Your Comment"
+msgstr "Jätä kommentti"
+
+#: comments.php:40
+#, php-format
+#@ default
+msgid "Leave a Reply to %s"
+msgstr "Jätä vastaus %s"
+
+#: comments.php:41
+#@ default
+msgid "Submit"
+msgstr "﻿Sano"
+
+#: footer-mobile.php:15
+#: menu.php:1
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "About"
+msgstr "Tietoja"
+
+#: footer-mobile.php:16
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Events"
+msgstr "Tapahtumat"
+
+#: footer-mobile.php:17
+#: footer.php:32
+#@ outsystems_blog
+msgid "Resources"
+msgstr "Resurssit"
+
+#: footer-mobile.php:18
+#: footer.php:38
+#@ outsystems_blog
+msgid "Community"
+msgstr "Yhteisö"
+
+#: footer-mobile.php:34
+#: testpp.php:585
+#@ outsystems_blog
+msgid "more offices"
+msgstr "lisää toimistot"
+
+#: footer-mobile.php:38
+#@ outsystems_blog
+msgid "Atlanta"
+msgstr ""
+
+#: footer-mobile.php:39
+#@ outsystems_blog
+msgid "+14047195100"
+msgstr ""
+
+#: footer-mobile.php:40
+#@ outsystems_blog
+msgid "+1 404 719 5100"
+msgstr ""
+
+#: footer-mobile.php:55
+#@ outsystems_blog
+msgid "Built with the"
+msgstr "Rakennettu"
+
+#: footer-mobile.php:58
+#: footer.php:87
+#@ outsystems_blog
+msgid "Terms &amp; Conditions"
+msgstr "Ehdot &amp; olosuhteet"
+
+#: footer-mobile.php:59
+#: footer.php:90
+#@ outsystems_blog
+msgid "About Cookies"
+msgstr "Tietoa Cookie"
+
+#: footer-mobile.php:81
+#@ outsystems_blog
+msgid "Search"
+msgstr "Haku"
+
+#: footer-mobile.php:98
+#@ outsystems_blog
+msgid "Cancel"
+msgstr "Peruuttaa"
+
+#: footer.php:9
+#@ outsystems_blog
+msgid "Company"
+msgstr "Yhtiö"
+
+#: footer.php:12
+#@ outsystems_blog
+msgid "About Us"
+msgstr "Meistä"
+
+#: footer.php:15
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Careers"
+msgstr "Työpaikat"
+
+#: footer.php:18
+#@ outsystems_blog
+msgid "Training"
+msgstr "Koulutus"
+
+#: footer.php:21
+#@ outsystems_blog
+msgid "Partners"
+msgstr "Yhteistyökumppanit"
+
+#: footer.php:24
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "News"
+msgstr "Uutiset"
+
+#: footer.php:29
+#@ outsystems_blog
+msgid "More"
+msgstr "lisää"
+
+#: footer.php:35
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Blog"
+msgstr ""
+
+#: footer.php:41
+#@ outsystems_blog
+msgid "Agile Network"
+msgstr ""
+
+#: footer.php:46
+#: functions.php:137
+#@ outsystems_blog
+msgid "Twitter"
+msgstr ""
+
+#: footer.php:49
+#@ outsystems_blog
+msgid "Facebook"
+msgstr ""
+
+#: footer.php:52
+#@ outsystems_blog
+msgid "G+"
+msgstr ""
+
+#: footer.php:55
+#@ outsystems_blog
+msgid "linkedin"
+msgstr ""
+
+#: footer.php:62
+#@ outsystems_blog
+msgid "Upcoming Events"
+msgstr "Tulevat tapahtumat"
+
+#: footer.php:66
+#@ outsystems_blog
+msgid "more events"
+msgstr "lisää tapahtumia"
+
+#: footer.php:81
+#@ outsystems_blog
+msgid "Built with"
+msgstr "Rakennettu"
+
+#: footer.php:83
+#@ outsystems_blog
+msgid "All rights reserved."
+msgstr "Kaikki oikeudet pidätetään."
+
+#: functions.php:40
+#, php-format
+#@ default
+msgid "<h5><span class=\"fn\">%s<span></h5>"
+msgstr ""
+
+#: functions.php:43
+#@ default
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa maltillisesti."
+
+#. translators: 1: date, 2: time
+#: functions.php:51
+#, php-format
+#@ default
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:51
+#@ default
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:132
+#@ outsystems_blog
+msgid "Extra profile information"
+msgstr "Extra profiilitietoja"
+
+#: functions.php:141
+#@ outsystems_blog
+msgid "Please enter your Twitter username."
+msgstr "Kirjoita Twitter-käyttäjätunnus."
+
+#: index.php:66
+#@ outsystems_blog
+msgid "Subscribe our posts with"
+msgstr "Tilaa meidän virkaa kanssa"
+
+#: index.php:66
+#@ outsystems_blog
+msgid "or"
+msgstr "tai"
+
+#: index.php:74
+#@ outsystems_blog
+msgid "Platform in Action"
+msgstr ""
+
+#: index.php:77
+#@ outsystems_blog
+msgid "Perspectives"
+msgstr "Näkökulmia"
+
+#: index.php:80
+#@ outsystems_blog
+msgid "Tech Zone"
+msgstr ""
+
+#: load_box.php:3
+#@ outsystems_blog
+msgid "Load more..."
+msgstr "﻿Lataa lisää"
+
+#: load_box.php:4
+#@ outsystems_blog
+msgid "Loading"
+msgstr "﻿Lataaminen"
+
+#: load_box.php:5
+#@ outsystems_blog
+msgid "Error loading more posts."
+msgstr "﻿Virhe ladattaessa palvelua"
+
+#: menu.php:1
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Platform"
+msgstr ""
+
+#: menu.php:1
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Solutions"
+msgstr "﻿Liuos"
+
+#: menu.php:1
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Customers"
+msgstr "Asiakkaat"
+
+#: menu.php:1
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Get Started"
+msgstr "﻿Aloittaminen"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid " Enterprise Rapid App Delivery"
+msgstr "Enterprise Rapid App Toimitus"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Learn More..."
+msgstr "Lue lisää ..."
+
+#: menu.php:4
+#@ outsystems_blog
+msgid " "
+msgstr ""
+
+#: menu.php:4
+#@ outsystems_blog
+msgid " Mobile Application <br/>Delivery"
+msgstr " Mobile Application <br/>Toimitus"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "                   Solutions                 "
+msgstr "                   Ratkaisut                 "
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "                   Hundreds of companies                    <br/>                    in 22 industries use                    <br/>                    OutSystems Platform to                    <br/>                    deliver innovative                    <br/>                    business solutions.                 "
+msgstr "                   Sadat yritykset <br/> 22 teollisuus käyttää <br/> OutSystems Platform <br/> tarjota innovatiivisia <br/> liiketoiminnan ratkaisuja.                 "
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "                   See what our customers have built in industries like:                 "
+msgstr "                   Katso mitä asiakkaamme ovat rakennettu teollisuudenaloilla, kuten:                 "
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Banking"
+msgstr "Pankkitoiminta"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Insurance"
+msgstr "Vakuutus"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Healthcare"
+msgstr "Terveydenhuolto"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Pharma &amp; Biotech"
+msgstr "Pharma &amp; Biotech"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Retail &amp; Consumer Goods"
+msgstr "Retail &amp; Kulutustavarat"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "All industries &raquo;"
+msgstr "Kaikki teollisuudenalat &raquo;"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "                   "
+msgstr ""
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Kick-start your next app project with our sample apps"
+msgstr "Käyntiin seuraavalle app projekti meidän näyte apps"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Field Services"
+msgstr ""
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Mobile Order Management"
+msgstr ""
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Executive Dashboard"
+msgstr ""
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Customer Portal"
+msgstr "Asiakasportaali"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "Car Accident Reporting"
+msgstr "Auton Onnettomuuden raportoinnista"
+
+#: menu.php:4
+#@ outsystems_blog
+msgid "More apps &raquo;"
+msgstr "Lisää sovelluksia &raquo;"
+
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Overview"
+msgstr "yleiskatsaus"
+
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Management Team"
+msgstr "Johtoryhmä"
+
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Analysts"
+msgstr "Analyytikot"
+
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Investors"
+msgstr "Sijoittajat"
+
+#: menu.php:4
+#: menu_backup.php:1
+#@ outsystems_blog
+msgid "Offices and Support"
+msgstr "Toimistot ja tuki"
+
+#: page.php:18
+#@ default
+msgid "Filed under&#58;"
+msgstr ""
+
+#: page.php:18
+#@ default
+msgid "by"
+msgstr "mukaan"
+
+#: sidebar.php:53
+#@ outsystems_blog
+msgid "Explore other categories:"
+msgstr "Tutustu muihin luokkiin:"
+
+#: sidebar.php:78
+#@ outsystems_blog
+msgid "More posts in this category:"
+msgstr "Lisää virkoja tässä kategoriassa:"
+
+#: single.php:79
+#@ outsystems_blog
+msgid "About the author"
+msgstr "Tietoja kirjoittajasta"
+
+#: tag.php:22
+#: tag.php:50
+#@ outsystems_blog
+msgid "Posts tagged with"
+msgstr "Posts tagged kanssa"
+
+#: comments.php:44
+#@ default
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: menu.php:1
+#@ outsystems_blog
+msgid "Call us at  404-719-5100"
+msgstr "Soita meille 404-719-5100"
+
+#: menu.php:1
+#@ outsystems_blog
+msgid "Contact Us"
+msgstr "Ota yhteyttä"
+
+#: menu.php:1
+#@ outsystems_blog
+msgid "Login"
+msgstr "Kirjaudu"
+
