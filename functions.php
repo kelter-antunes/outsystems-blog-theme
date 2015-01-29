@@ -160,11 +160,13 @@ function my_save_extra_profile_fields( $user_id ) {
 
 
 function post_intro($post){
- if (!is_single() && $post->post_excerpt!=""){
-	echo $post->post_excerpt;
-} else {
-	the_content();
+	 if (!is_single() && $post->post_excerpt!=""){
+		echo $post->post_excerpt;
+	 } else {
+		the_content();
+	 }
 
-	 echo stripslashes(get_option('append_to_post'));
-}
+	 if (is_single()){
+		echo stripslashes(get_option('append_to_post'));
+	 }
 }
