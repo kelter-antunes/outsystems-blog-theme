@@ -4,7 +4,7 @@
 add_action('after_setup_theme', 'outsystems_theme_setup');
 
 function outsystems_theme_setup(){
-	load_theme_textdomain( 'outsystems_blog',get_template_directory() . '/language');
+	load_theme_textdomain( 'outsystems_blog',get_template_directory() . '/languages');
 }
 
 
