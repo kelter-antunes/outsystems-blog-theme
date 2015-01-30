@@ -15,19 +15,19 @@
 <?php 
 $fields =  array(
   'author' =>
-    '<div class="comment-form-author"><div class="formlabel"><label for="author">' . __( 'Name', 'domainreference' ) . '</label></div>' .
+    '<div class="comment-form-author"><div class="formlabel"><label for="author">' . __( 'Name', 'outsystems_blog' ) . '</label></div>' .
     ( $req ? '' : '' ) .
     '<div class="forminput"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
     '" size="30"' . $aria_req . ' /></div></div>',
 
   'email' =>
-    '<div class="comment-form-email"><div class="formlabel"><label for="email">' . __( 'E-mail', 'domainreference' ) . '</label></div>' .
+    '<div class="comment-form-email"><div class="formlabel"><label for="email">' . __( 'E-mail', 'outsystems_blog' ) . '</label></div>' .
     ( $req ? '' : '' ) .
     '<div class="forminput"><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' /></div></div>',
 
   'url' =>
-    '<div class="comment-form-url"><div class="formlabel"><label for="url">' . __( 'URL', 'domainreference' ) . '</label></div>' .
+    '<div class="comment-form-url"><div class="formlabel"><label for="url">' . __( 'URL', 'outsystems_blog' ) . '</label></div>' .
     '<div class="forminput"><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" /></div></div>',
 );
