@@ -36,9 +36,9 @@ comment_form(
 		array(
 			'id_form'           	=> 'commentform',
 			'id_submit'         	=> 'submit',
-			'title_reply'			=> __( 'Leave Your Comment' ), 
-			'title_reply_to'	    => __( 'Leave a Reply to %s' ),
-			'label_submit'			=> __( 'Submit' ),
+			'title_reply'			=> __( 'Leave Your Comment',"outsystems_blog" ),
+			'title_reply_to'	    => __( 'Leave a Reply to %s',"outsystems_blog" ),
+			'label_submit'			=> __( 'Submit',"outsystems_blog" ),
 			'comment_notes_before'	=> '',
 			'comment_notes_after'	=> '',
 			'comment_field' 		=>  '<div class="comment-form-comment"><div class="formlabel"><label for="comment">' . _x( 'Comment', 'noun' ) .
