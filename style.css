@@ -775,3 +775,36 @@ a.postlink:hover {
 .social_share {
 	text-align:center
 }
+
+.post_append {
+	border: 1px solid #cccccc;
+	font-family:'myriad-pro',Arial,sans-serif;
+	text-align: center;
+	margin: 15px auto;
+	width:500px;
+}
+
+.general_post_append{
+	border: 1px solid #bc2e11;
+}
+
+.post_append .inner {
+	padding:15px;
+}
+.post_append .text {
+	font-size: 16px;
+}
+.post_append .form {
+	min-height: 60px;
+	width:410px;
+	margin: 0 auto;
+}
+
+.post_append h1 {
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.general_post_append h1 {
+	color: #f03f1a;
+}
