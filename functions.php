@@ -167,6 +167,7 @@ function post_intro($post){
 	 }
 
 	 if (is_single()){
+		 echo get_field('call_to_action');
 		echo stripslashes(get_option('append_to_post'));
 	 }
 }
