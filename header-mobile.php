@@ -5,7 +5,8 @@ session_start();
 if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	//do mobile proxy
 	$_SESSION['currentPageURL'] = curPageURL();
-	header( "Location: http://wwwpp.outsystems.net/blog/wp-content/themes/outsystems-blog-theme/mobileproxy.php" ); /* Redirect browser */
+//	header( "Location: http://wwwpp.outsystems.net/blog/wp-content/themes/outsystems-blog-theme/mobileproxy.php" ); /* Redirect browser */
+	header( "Location: ".get_template_directory_uri()."/mobileproxy.php" ); /* Redirect browser */
 }
 ?>
 
