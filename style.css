@@ -781,7 +781,7 @@ a.postlink:hover {
 	font-family:'myriad-pro',Arial,sans-serif;
 	text-align: center;
 	margin: 15px auto;
-	width:500px;
+	width:90%;
 }
 
 .general_post_append{
@@ -796,7 +796,7 @@ a.postlink:hover {
 }
 .post_append .form {
 	min-height: 60px;
-	width:410px;
+	width:80%;
 	margin: 0 auto;
 }
 
