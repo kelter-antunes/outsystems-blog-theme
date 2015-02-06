@@ -61,7 +61,7 @@ while ( have_posts() ) : the_post(); ?>
 	<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 	<div class="postcontent"><?php the_content(); ?></div>
 	<p class="postmetadata byline">
-		By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+		<?php _e("By","outsystems_blog");?> <?php  the_author_posts_link(); ?> <?php _e("on","outsystems_blog");?> <?php echo get_the_date(); ?>
 	</p>
 </div>
 </div>

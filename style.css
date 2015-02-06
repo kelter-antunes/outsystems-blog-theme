@@ -1,10 +1,11 @@
 /*
 Theme Name: Outsystems Blog Theme
+Text Domain: outsystems_blog
 Theme URI: https://github.com/kelter-antunes/outsystems-blog-theme
 Description: Outsystems wordpress theme
 Author: Outsystems Dex Team
 Author URI: http://www.outsystems.com
-Version: 1.2
+Version: 1.5
 */
 
 body {
@@ -295,7 +296,7 @@ a img.aligncenter {
 }
 
 .search_field .button {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=26072013) no-repeat -1px -1px
+	background:url(http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=26072013) no-repeat -1px -1px
 }
 
 .header_top {
@@ -773,4 +774,37 @@ a.postlink:hover {
 
 .social_share {
 	text-align:center
+}
+
+.post_append {
+	border: 1px solid #cccccc;
+	font-family:'myriad-pro',Arial,sans-serif;
+	text-align: center;
+	margin: 15px auto;
+	width:90%;
+}
+
+.general_post_append{
+	border: 1px solid #bc2e11;
+}
+
+.post_append .inner {
+	padding:15px;
+}
+.post_append .text {
+	font-size: 16px;
+}
+.post_append .form {
+	min-height: 60px;
+	width:80%;
+	margin: 0 auto;
+}
+
+.post_append h1 {
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.general_post_append h1 {
+	color: #f03f1a;
 }

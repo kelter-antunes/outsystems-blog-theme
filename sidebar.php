@@ -26,31 +26,20 @@ if (is_mobile() ) {
 
 			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
 			<script type="text/javascript">
-				var titleNew = document.title + '- via @<?php the_author_meta( "twitter" ); }?>';
+				var titleNew = document.title + "- via @<?php the_author_meta( 'twitter' ); ?>";
 				addthis.update('share', 'title', titleNew);
 			</script>
 			<?php } ?>
 
 		</div>
 		<div class="rss_subscription">
-			<div class="subscription_area">
-				<?php
-				$success = $_GET['aliId'];
-				if( $success != "" )
-					echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
-				else {
-					echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
-					<form id="mktoForm_1119"></form>
-					<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
-				}
-				?>
-			</div>
+			<?php include_once("subscription_area.php"); ?>
 
-			<div class="feeds"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> Subscribe RSS</a></div>
+			<div class="feeds"><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="rss">&nbsp;</i> <?php _e("Subscribe RSS","outsystems_blog");?></a></div>
 		</div>
 
 		<div class="more_posts">
-			<h4>Explore other categories:</h4>
+			<h4><?php _e("Explore other categories:","outsystems_blog");?></h4>
 			<div class="categories">
 				<!--<div class="toggle <?php ( $the_category == '' ? print " active" : "" ) ?>"><a href="<?php bloginfo( 'url' ); ?>">All Posts</a></div>-->
 				<?php
@@ -75,7 +64,7 @@ if (is_mobile() ) {
 		</div>
 
 		<div class="more_posts_category">
-			<h4>More posts in this category:</h4>
+			<h4><?php _e("More posts in this category:","outsystems_blog");?></h4>
 			<?php query_posts( array ( 'category_name' => $the_category, 'posts_per_page' => 3, 'post__not_in' => array( $the_post_id )  ) );
 			while ( have_posts() ) : the_post(); ?>
 			<?php /*if( get_the_ID() != $the_post_id ) : */?>
@@ -101,7 +90,7 @@ if (is_mobile() ) {
 				<?php endif; ?>
 				<div class="entry">
 					<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<div class="postcontent"><?php the_content(); ?></div>
+					<div class="postcontent"><?php post_intro($post); ?></div>
 					<p class="postmetadata byline">
 						By <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
 					</p>

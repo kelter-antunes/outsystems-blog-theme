@@ -18,18 +18,7 @@ endif;
 		<div style="float:left;" class="author">
 			<h3><i></i> Posts by <?php the_author_posts_link(); ?></h3>
 		</div>
-		<div class="subscription_area">
-			<?php
-			$success = $_GET['aliId'];
-			if( $success != "" )
-				echo '<div class="subscribed">Thank you for subscribing to our blog!</div>';
-			else {
-				echo '<script src="//app-sj03.marketo.com/js/forms2/js/forms2.js"></script>
-				<form id="mktoForm_1119"></form>
-				<script>MktoForms2.loadForm("//app-sj03.marketo.com", "338-PNW-019", 1119);</script>';
-			}
-			?>
-		</div>
+		<?php include_once("subscription_area.php"); ?>
 	</div>
 </div>
 
@@ -40,7 +29,7 @@ endif;
 	<div class="container">
 		<h1><a href="<?php echo get_option( 'home' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="feeds_home">
-			<a href="/blog/subscribe-our-posts">Subscribe our posts <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
+			<a href="/blog/subscribe-our-posts"><?php _e("Subscribe our posts","outsystems_blog");?> <i class="rss">&nbsp;</i>&nbsp;<span class="osicon-mail">&nbsp;</span></a>
 		</div>
 		<div class="header_top">
 			<div class="author">
@@ -81,92 +70,18 @@ endif;
 			
 			<div class="entry">
 				<h3><a class="postlink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<div class="postcontent"><?php the_content(); ?></div>
+				<div class="postcontent"><?php post_intro($post); ?></div>
 				<p class="postmetadata byline">
-					By <?php  the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+					<?php _e("By","outsystems_blog");?> <?php  the_author_posts_link(); ?> <?php _e("on","outsystems_blog");?> <?php echo get_the_date(); ?>
 				</p>
 			</div>
 		</div>
 	<?php endwhile; ?>
 </div>
-
-<div class="LoadBox">
-	<div id="LoadMoreDiv" ><a href="javascript:load_posts();">Load more...</a></div>
-	<div id="LoadingDiv" style="display: none;">Loading</div>
-	<div id="LoadingError"  style="display: none;">Error loading more posts.</div>
-</div>
+<?php include_once("load_box.php"); ?>
 <?php endif; ?>
 </div>
-<script language="javascript" type="text/javascript">
-$(document).ready(function(){
-	$('.posts').masonry({
-		columnWidth: 306,
-		itemSelector: '.post',
-		gutter: 30
-	});
-
-	$content.waitForImages( function () {
-		$('.posts').masonry();
-	});
-});
-</script>
-<script language="javascript" type="text/javascript">
-var page = 1;
-var loading = false;
-var moreToLoad = true;
-var $window = $(window);
-var $content = $('body .posts');
-var load_posts = function(){
-	if( !moreToLoad ) {
-		$('#LoadMoreDiv').hide();
-		$('#LoadingDiv').hide();
-
-		return;
-	}
-	
-	loading = true;
-	$('#LoadMoreDiv').hide();
-	$('#LoadingDiv').show();
-	page++;
-	$.ajax({
-		type       : "GET",
-		data       : {pageNumber: page, author: "<?php echo $selected_category ?>"},
-		dataType   : "html",
-		url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/outsystems-blog-theme/loopHandler.php",
-		beforeSend : function(){
-		},
-		success    : function(data){
-			if (data == null || data == "") {
-				loadMore = false;
-				$('#LoadMoreDiv').hide();
-				$('#LoadingDiv').hide();
-
-				return ;
-			}
-			$data = jQuery(data);
-			$content.append($data);
-			$content.masonry( 'appended', $data, false);
-			$content.waitForImages( function () {
-				$content.masonry();
-			});
-			loading = false;
-			$('#LoadingDiv').hide();
-			$('#LoadMoreDiv').show();
-		},
-		error     : function(jqXHR, textStatus, errorThrown) {
-			loading = false;
-			$('#LoadingDiv').hide();
-			$('#LoadingError').show();
-		}
-	});
-}
-$window.scroll(function() {
-	var content_offset = $content.offset();
-	if(!loading && ($window.scrollTop() + $window.height()) > ($content.scrollTop() + $content.height() + content_offset.top)) {
-		load_posts();
-	}
-});
-</script>
+<?php include_once("js/infinite_load.php"); ?>
 <?php
 if ( is_mobile() ) :
 	get_footer( 'mobile' );

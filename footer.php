@@ -6,64 +6,64 @@
 					<div class="row" id="footer-mid">
 						<ul class="footer-nav span2">
 							<li class="title">
-								<span>Company</span>
+								<span><?php _e("Company","outsystems_blog");?></span>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/company/">About Us</a>
+								<a href="http://www.outsystems.com/company/"><?php _e("About Us","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/company/careers/">Careers</a>
+								<a href="http://www.outsystems.com/company/careers/"><?php _e("Careers","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/academy/" target="_blank">Training</a>
+								<a href="http://www.outsystems.com/academy/" target="_blank"><?php _e("Training","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/partners/">Partners</a>
+								<a href="http://www.outsystems.com/partners/"><?php _e("Partners","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/company/news/">News</a>
+								<a href="http://www.outsystems.com/company/news/"><?php _e("News","outsystems_blog");?></a>
 							</li>
 						</ul>
 						<ul class="footer-nav span2">
 							<li class="title">
-								<span>More</span>
+								<span><?php _e("More","outsystems_blog");?></span>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/it-resources/">Resources</a>
+								<a href="http://www.outsystems.com/it-resources/"><?php _e("Resources","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/blog/" target="_blank">Blog</a>
+								<a href="http://www.outsystems.com/blog/" target="_blank"><?php _e("Blog","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/community/" target="_blank">Community</a>
+								<a href="http://www.outsystems.com/community/" target="_blank"><?php _e("Community","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/network/" target="_blank">Agile Network</a>
+								<a href="http://www.outsystems.com/network/" target="_blank"><?php _e("Agile Network","outsystems_blog");?></a>
 							</li>
 							<li>
 								<ul class="social-icons">
 									<li>
-										<a class="twitter" href="http://twitter.com/OutSystems" target="_blank">Twitter</a>
+										<a class="twitter" href="http://twitter.com/OutSystems" target="_blank"><?php _e("Twitter","outsystems_blog");?></a>
 									</li>
 									<li>
-										<a class="facebook" href="http://www.facebook.com/OutSystems" target="_blank">Facebook</a>
+										<a class="facebook" href="http://www.facebook.com/OutSystems" target="_blank"><?php _e("Facebook","outsystems_blog");?></a>
 									</li>
 									<li>
-										<a class="google" href="http://plus.google.com/+outsystems" target="_blank">G+</a>
+										<a class="google" href="http://plus.google.com/+outsystems" target="_blank"><?php _e("G+","outsystems_blog");?></a>
 									</li>
 									<li>
-										<a class="linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank">linkedin</a>
+										<a class="linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank"><?php _e("linkedin","outsystems_blog");?></a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 						<ul id="footer-events-list" class="footer-nav span4">
 							<li class="title">
-								<span>Upcoming Events</span>
+								<span><?php _e("Upcoming Events","outsystems_blog");?></span>
 							</li>
 
 							<li class="events-more">
-								<a href="http://www.outsystems.com/company/events/" id="wt15">more events &raquo;</a>
+								<a href="http://www.outsystems.com/company/events/" id="wt15"><?php _e("more events","outsystems_blog");?> &raquo;</a>
 							</li>
 						</ul>
 						<ul class="footer-nav span4">
@@ -78,16 +78,16 @@
 					<div class="row" id="footer-bottom">
 						<div class="legal span12">
 							<p>
-								Built with <a class="footer-op-link" href="http://www.outsystems.com/platform/?ref=f">
+								<?php _e("Built with","outsystems_blog");?> <a class="footer-op-link" href="http://www.outsystems.com/platform/?ref=f">
 								OutSystems<sup>&reg;</sup> Platform
-							</a>&nbsp;- OutSystems &copy; All rights reserved.
+							</a>&nbsp;- OutSystems &copy; <?php _e("All rights reserved.","outsystems_blog");?>
 						</p>
 						<ul>
 							<li>
-								<a href="http://www.outsystems.com/legal/terms-of-use/" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+								<a href="http://www.outsystems.com/legal/terms-of-use/" title="Terms &amp; Conditions"><?php _e("Terms &amp; Conditions","outsystems_blog");?></a>
 							</li>
 							<li>
-								<a href="http://www.outsystems.com/legal/terms-of-use/privacy-statement/#7">About Cookies</a>
+								<a href="http://www.outsystems.com/legal/terms-of-use/privacy-statement/#7"><?php _e("About Cookies","outsystems_blog");?></a>
 							</li>
 						</ul>
 					</div>

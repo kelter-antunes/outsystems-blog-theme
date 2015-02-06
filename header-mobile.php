@@ -5,7 +5,8 @@ session_start();
 if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	//do mobile proxy
 	$_SESSION['currentPageURL'] = curPageURL();
-	header( "Location: http://wwwpp.outsystems.net/blog/wp-content/themes/outsystems-blog-theme/mobileproxy.php" ); /* Redirect browser */
+//	header( "Location: http://wwwpp.outsystems.net/blog/wp-content/themes/outsystems-blog-theme/mobileproxy.php" ); /* Redirect browser */
+	header( "Location: ".get_template_directory_uri()."/mobileproxy.php" ); /* Redirect browser */
 }
 ?>
 
@@ -27,15 +28,15 @@ if ( $_SESSION['IgnoreMobileDeviceCheck'] == false ) {
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=font-css.css&v=20141008115802" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase-responsive&v=20141008115802" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css&v=20141008115802" charset="UTF-8" />
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=font-css.css&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase-responsive&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css&v=20141008115802" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css&v=20141008115802" charset="UTF-8">
 
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20141008115802" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-medias-css.css&v=20141008115802" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-responsive-css&v=20141008115802" charset="UTF-8">
 
-	
+
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 	<script src="/_osjs.js?8_0_1_10" type="text/javascript" charset="UTF-8"></script>
@@ -145,7 +146,7 @@ wp_get_archives( 'type=monthly&format=link' );
 						<div class="span1"></div>
 						<div class="navigation-bar-section navigation-bar-tail-spacer">
 							<a id="wt4_wtheader_wt2_wt66" href="/">
-								<img class="navigation-bar-tail-logo" alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=logo-outsystems_glow">
+								<img class="navigation-bar-tail-logo" alt="" src="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=logo-outsystems_glow">
 							</a>
 							<div class="Application_Menu">
 								<div class="MenuSlider_Toggler_Overlay2"></div>

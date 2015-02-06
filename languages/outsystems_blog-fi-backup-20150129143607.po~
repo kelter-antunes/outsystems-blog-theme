@@ -1,0 +1,429 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Outsystems blog\n"
+"POT-Creation-Date: 2015-01-27 10:55-0000\n"
+"PO-Revision-Date: 2015-01-27 10:55-0000\n"
+"Last-Translator: Nick <piranya87@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+msgid "Page not found!"
+msgstr "Sivua ei löytynyt!"
+
+#: ../404.php:14
+msgid "Oops! It seems that the page you're looking for is not here anymore!"
+msgstr "Hups! Näyttää siltä, että sivu etsit ei ole täällä enää!"
+
+#: ../404.php:15
+msgid "It might have moved or the URL you typed is not correct."
+msgstr "Se ehkä siirretty tai URL kirjoittamasi ei ole oikein."
+
+#: ../404.php:17
+msgid "Were you hoping to find anything here?"
+msgstr "Olitko toivoen löytävänsä mitään täällä?"
+
+#: ../404.php:17
+msgid "Drop us a message to let us know..."
+msgstr "Lähettää meille viesti kertoa meille ..."
+
+#: ../author.php:25 ../category.php:44 ../index.php:48 ../sidebar.php:40
+#: ../tag.php:28
+msgid "Thank you for subscribing to our blog!"
+msgstr "Kiitos tilaamalla blogi!"
+
+#: ../author.php:43 ../category.php:62 ../single.php:21 ../tag.php:46
+msgid "Subscribe our posts"
+msgstr "Tilaa meidän virkaa"
+
+#: ../author.php:86 ../index.php:122 ../loopHandler.php:64 ../single.php:63
+msgid "By"
+msgstr "Mukaan"
+
+#: ../author.php:86 ../index.php:122 ../loopHandler.php:64 ../single.php:63
+msgid "on"
+msgstr "päällä"
+
+#: ../category.php:17 ../index.php:21 ../sidebar.php:49 ../tag.php:18
+msgid "Subscribe RSS"
+msgstr "﻿Tilaa RSS-syöte"
+
+#: ../category.php:21 ../index.php:25 ../index.php:71
+msgid "All posts"
+msgstr "﻿Kaikki artikkelit"
+
+#: ../comments.php:3
+msgid "Comments"
+msgstr "Kommentit"
+
+#: ../comments.php:18
+msgid "Name"
+msgstr "﻿Nimi"
+
+#: ../comments.php:24
+msgid "E-mail"
+msgstr ""
+
+#: ../comments.php:30
+msgid "URL"
+msgstr ""
+
+#: ../comments.php:39
+msgid "Leave Your Comment"
+msgstr "Jätä kommentti"
+
+#: ../comments.php:40
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Jätä vastaus %s"
+
+#: ../comments.php:41
+msgid "Submit"
+msgstr "﻿Sano"
+
+#: ../footer-mobile.php:15 ../menu.php:1 ../menu_backup.php:1
+msgid "About"
+msgstr "Tietoja"
+
+#: ../footer-mobile.php:16 ../menu.php:4 ../menu_backup.php:1
+msgid "Events"
+msgstr "Tapahtumat"
+
+#: ../footer-mobile.php:17 ../footer.php:32
+msgid "Resources"
+msgstr "Resurssit"
+
+#: ../footer-mobile.php:18 ../footer.php:38
+msgid "Community"
+msgstr "Yhteisö"
+
+#: ../footer-mobile.php:34 ../testpp.php:585
+msgid "more offices"
+msgstr "lisää toimistot"
+
+#: ../footer-mobile.php:38
+msgid "Atlanta"
+msgstr ""
+
+#: ../footer-mobile.php:39
+msgid "+14047195100"
+msgstr ""
+
+#: ../footer-mobile.php:40
+msgid "+1 404 719 5100"
+msgstr ""
+
+#: ../footer-mobile.php:55
+msgid "Built with the"
+msgstr "Rakennettu"
+
+#: ../footer-mobile.php:58 ../footer.php:87
+msgid "Terms &amp; Conditions"
+msgstr "Ehdot &amp; olosuhteet"
+
+#: ../footer-mobile.php:59 ../footer.php:90
+msgid "About Cookies"
+msgstr "Tietoa Cookie"
+
+#: ../footer-mobile.php:81
+msgid "Search"
+msgstr "Haku"
+
+#: ../footer-mobile.php:98
+msgid "Cancel"
+msgstr "Peruuttaa"
+
+#: ../footer.php:9
+msgid "Company"
+msgstr "Yhtiö"
+
+#: ../footer.php:12
+msgid "About Us"
+msgstr "Meistä"
+
+#: ../footer.php:15 ../menu.php:4 ../menu_backup.php:1
+msgid "Careers"
+msgstr "Työpaikat"
+
+#: ../footer.php:18
+msgid "Training"
+msgstr "Koulutus"
+
+#: ../footer.php:21
+msgid "Partners"
+msgstr "Yhteistyökumppanit"
+
+#: ../footer.php:24 ../menu.php:4 ../menu_backup.php:1
+msgid "News"
+msgstr "Uutiset"
+
+#: ../footer.php:29
+msgid "More"
+msgstr "lisää"
+
+#: ../footer.php:35 ../menu.php:4 ../menu_backup.php:1
+msgid "Blog"
+msgstr ""
+
+#: ../footer.php:41
+msgid "Agile Network"
+msgstr ""
+
+#: ../footer.php:46 ../functions.php:136
+msgid "Twitter"
+msgstr ""
+
+#: ../footer.php:49
+msgid "Facebook"
+msgstr ""
+
+#: ../footer.php:52
+msgid "G+"
+msgstr ""
+
+#: ../footer.php:55
+msgid "linkedin"
+msgstr ""
+
+#: ../footer.php:62
+msgid "Upcoming Events"
+msgstr "Tulevat tapahtumat"
+
+#: ../footer.php:66
+msgid "more events"
+msgstr "lisää tapahtumia"
+
+#: ../footer.php:81
+msgid "Built with"
+msgstr "Rakennettu"
+
+#: ../footer.php:83
+msgid "All rights reserved."
+msgstr "Kaikki oikeudet pidätetään."
+
+#: ../functions.php:39
+#, php-format
+msgid "<h5><span class=\"fn\">%s<span></h5>"
+msgstr ""
+
+#: ../functions.php:42
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa maltillisesti."
+
+#. translators: 1: date, 2: time
+#: ../functions.php:50
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:50
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions.php:131
+msgid "Extra profile information"
+msgstr "Extra profiilitietoja"
+
+#: ../functions.php:140
+msgid "Please enter your Twitter username."
+msgstr "Kirjoita Twitter-käyttäjätunnus."
+
+#: ../functions.php:170
+msgid "See all results"
+msgstr "﻿Katso kaikki tulokset"
+
+#: ../index.php:66
+msgid "Subscribe our posts with"
+msgstr "Tilaa meidän virkaa kanssa"
+
+#: ../index.php:66
+msgid "or"
+msgstr "tai"
+
+#: ../index.php:74
+msgid "Platform in Action"
+msgstr ""
+
+#: ../index.php:77
+msgid "Perspectives"
+msgstr "Näkökulmia"
+
+#: ../index.php:80
+msgid "Tech Zone"
+msgstr ""
+
+#: ../load_box.php:3
+msgid "Load more..."
+msgstr "﻿Lataa lisää"
+
+#: ../load_box.php:4
+msgid "Loading"
+msgstr "﻿Lataaminen"
+
+#: ../load_box.php:5
+msgid "Error loading more posts."
+msgstr "﻿Virhe ladattaessa palvelua"
+
+#: ../menu.php:1 ../menu_backup.php:1
+msgid "Platform"
+msgstr ""
+
+#: ../menu.php:1 ../menu_backup.php:1
+msgid "Solutions"
+msgstr "﻿Liuos"
+
+#: ../menu.php:1 ../menu_backup.php:1
+msgid "Customers"
+msgstr "Asiakkaat"
+
+#: ../menu.php:1 ../menu_backup.php:1
+msgid "Get Started"
+msgstr "﻿Aloittaminen"
+
+#: ../menu.php:4
+msgid " Enterprise Rapid App Delivery"
+msgstr "Enterprise Rapid App Toimitus"
+
+#: ../menu.php:4
+msgid "Learn More..."
+msgstr "Lue lisää ..."
+
+#: ../menu.php:4
+msgid " "
+msgstr ""
+
+#: ../menu.php:4
+msgid " Mobile Application <br/>Delivery"
+msgstr " Mobile Application <br/>Toimitus"
+
+#: ../menu.php:4
+msgid "                   Solutions                 "
+msgstr "                   Ratkaisut                 "
+
+#: ../menu.php:4
+msgid ""
+"                   Hundreds of companies                    <br/"
+">                    in 22 industries use                    <br/"
+">                    OutSystems Platform to                    <br/"
+">                    deliver innovative                    <br/"
+">                    business solutions.                 "
+msgstr ""
+"                   Sadat yritykset <br/> 22 teollisuus käyttää <br/> "
+"OutSystems Platform <br/> tarjota innovatiivisia <br/> liiketoiminnan "
+"ratkaisuja.                 "
+
+#: ../menu.php:4
+msgid ""
+"                   See what our customers have built in industries "
+"like:                 "
+msgstr ""
+"                   Katso mitä asiakkaamme ovat rakennettu "
+"teollisuudenaloilla, kuten:                 "
+
+#: ../menu.php:4
+msgid "Banking"
+msgstr "Pankkitoiminta"
+
+#: ../menu.php:4
+msgid "Insurance"
+msgstr "Vakuutus"
+
+#: ../menu.php:4
+msgid "Healthcare"
+msgstr "Terveydenhuolto"
+
+#: ../menu.php:4
+msgid "Pharma &amp; Biotech"
+msgstr "Pharma &amp; Biotech"
+
+#: ../menu.php:4
+msgid "Retail &amp; Consumer Goods"
+msgstr "Retail &amp; Kulutustavarat"
+
+#: ../menu.php:4
+msgid "All industries &raquo;"
+msgstr "Kaikki teollisuudenalat &raquo;"
+
+#: ../menu.php:4
+msgid "                   "
+msgstr ""
+
+#: ../menu.php:4
+msgid "Kick-start your next app project with our sample apps"
+msgstr "Käyntiin seuraavalle app projekti meidän näyte apps"
+
+#: ../menu.php:4
+msgid "Field Services"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Mobile Order Management"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Executive Dashboard"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Customer Portal"
+msgstr "Asiakasportaali"
+
+#: ../menu.php:4
+msgid "Car Accident Reporting"
+msgstr "Auton Onnettomuuden raportoinnista"
+
+#: ../menu.php:4
+msgid "More apps &raquo;"
+msgstr "Lisää sovelluksia &raquo;"
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Overview"
+msgstr "yleiskatsaus"
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Management Team"
+msgstr "Johtoryhmä"
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Analysts"
+msgstr "Analyytikot"
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Investors"
+msgstr "Sijoittajat"
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Offices and Support"
+msgstr "Toimistot ja tuki"
+
+#: ../page.php:18
+msgid "Filed under&#58;"
+msgstr ""
+
+#: ../page.php:18
+msgid "by"
+msgstr "mukaan"
+
+#: ../sidebar.php:53
+msgid "Explore other categories:"
+msgstr "Tutustu muihin luokkiin:"
+
+#: ../sidebar.php:78
+msgid "More posts in this category:"
+msgstr "Lisää virkoja tässä kategoriassa:"
+
+#: ../single.php:79
+msgid "About the author"
+msgstr "Tietoja kirjoittajasta"
+
+#: ../tag.php:22 ../tag.php:50
+msgid "Posts tagged with"
+msgstr "Posts tagged kanssa"
