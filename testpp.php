@@ -332,7 +332,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <p style="text-align: center;">
         <img alt="OutSystems Map" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=outsystems-offices-map&v=20141112163831" />
         <br />
-        <a href="/company/contact-us/"><img alt="Offices and Resellers" src="	/CMS_BackOffice/ResourceLink.aspx?ResourceName=overview2&v=20141112163831" style="width: 200px; height: 48px;" /></a>
+        <a href="/company/contact-us/"><img alt="Offices and Resellers" src=" /CMS_BackOffice/ResourceLink.aspx?ResourceName=overview2&v=20141112163831" style="width: 200px; height: 48px;" /></a>
       </p>
     </div>
 

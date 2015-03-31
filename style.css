@@ -672,3 +672,114 @@ a.postlink:hover {
 .general_post_append h1 {
     color: #f03f1a;
 }
+
+
+
+/**********************************************************************/
+/****************************  Arab theme *****************************/
+/**********************************************************************/
+
+/*Mobile - header*/
+.navigation-bar-section.navigation-bar-tail-spacer > a{
+    float:left;
+}
+
+html[dir="rtl"] .Application_Menu{
+    direction:ltr;
+}
+
+html[dir="rtl"] .navigation-longtail-end {
+    width: 9999px;
+    height: 50px;
+    background-color: #000;
+    float: left;
+}
+
+html[dir="rtl"] .navigation-items{
+    width:100%;
+}
+
+html[dir="rtl"] .navigation-bar-tail-spacer{
+    float:left;
+}
+
+html[dir="rtl"] .navigation-longtail{
+    float:left;
+}
+
+
+html[dir="rtl"] .magiccontainer .submenuhover{
+    left:-28px;
+    right:0;
+}
+
+html[dir="rtl"] .magiccontainer .submenuhover .submenuhoverbox{
+    direction:ltr;
+}
+
+html[dir="rtl"] .feeds_home{
+    float:left;
+}
+
+html[dir="rtl"] ul.footer-nav {
+    float: left;
+    direction: ltr;
+}
+
+
+/*Blog Post*/
+html[dir="rtl"] .leftbar,
+html[dir="rtl"] .sidebar {
+    float:right;
+}
+
+html[dir="rtl"] .post{
+    float:right;
+}
+
+html[dir="rtl"] .subscription_area{
+    float:left;
+}
+
+html[dir="rtl"] .mktoForm .mktoFormRow{
+    float:right;
+}
+
+html[dir="rtl"] .post .header .category.perspectives,
+html[dir="rtl"] .post .header .category.tech-zone,
+html[dir="rtl"] .post .header .category.platform-in-action{
+    right: 0;
+    left: inherit;
+}
+
+html[dir="rtl"] .mktoForm .mktoOffset{
+    display:none;
+}
+
+html[dir="rtl"] .form-submit{
+    text-align: left;
+}
+
+html[dir="rtl"] .tags i{
+    margin-left:10px;
+}
+
+html[dir="rtl"] #footer-bottom li {
+    float: none;
+}
+
+#footer-bottom{
+    text-align: center;
+}
+
+/**********************************************************************/
+/**********************************************************************/
+
+.submenuhoverbox a{
+    color:#0088cc;
+}
+
+.submenuhoverbox .innovationlist,
+.submenuhoverbox .social-icons{
+    padding:0;
+}

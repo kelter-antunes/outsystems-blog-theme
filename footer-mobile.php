@@ -4,6 +4,12 @@
     #footer-wrapper {
       margin-top: -70px;
     }
+    .cta-wrapper-footer a{
+      display: inline-block;
+    }
+    html[dir="rtl"] .categories .toggle{
+      float:right;
+    }
     </style>
     <div id="footer-wrapper">
       <div id="footer-top-wrapper">
@@ -35,8 +41,8 @@
                   </span>
                 </div>
                 <div class="contact-us-address" style="margin-bottom: 20px;">
-                  <span style="float: left;display: inline-block;color: white;line-height: 30px;"><?php _e("Atlanta","outsystems_blog");?></span>
-                  <a href="tel:<?php _e("+14047195100","outsystems_blog");?>" style="float: right;background-color: #606060;border-radius: 5px;padding: 5px 14px;color: white;text-shadow: none;font-size: 17px;font-weight: 300;">
+                  <span style="<?php ( is_rtl() ? print " float:right;" : print "float:left;" ) ?> display: inline-block;color: white;line-height: 30px;"><?php _e("Atlanta","outsystems_blog");?></span>
+                  <a href="tel:<?php _e("+14047195100","outsystems_blog");?>" style="<?php ( is_rtl() ? print " float:left;" : print "float:right;" ) ?>background-color: #606060;border-radius: 5px;padding: 5px 14px;color: white;text-shadow: none;font-size: 17px;font-weight: 300;">
                     <span class="osicon-telephone">&nbsp;</span><?php _e("+1 404 719 5100","outsystems_blog");?></a>
                     <div class="clearfix">
                       &nbsp;

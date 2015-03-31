@@ -1,4 +1,3 @@
-
 <div class="subscription_area">
 			<?php
 			$success = $_GET['aliId'];

@@ -3,6 +3,7 @@ global $the_author_name;
 global $the_author_description;
 global $the_author_id;
 global $the_category;
+global $the_category_slug;
 global $the_post_id;
 
 global $more;
@@ -45,7 +46,7 @@ if (is_mobile() ) {
 				<?php
 				$categories = get_categories( '' );
 				foreach ( $categories as $index=>$category ) {
-					if ( $category->name != "Uncategorized" ) {
+					if ( $category->slug != "uncategorized" ) {
 						echo "<div class='toggle "
 						.( $index == 0 ? "" : "notopborder" )
 						.( strtolower( $the_category ) == strtolower( $category->name ) ? " active" : "" )
@@ -65,18 +66,25 @@ if (is_mobile() ) {
 
 		<div class="more_posts_category">
 			<h4><?php _e("More posts in this category:","outsystems_blog");?></h4>
-			<?php query_posts( array ( 'category_name' => $the_category, 'posts_per_page' => 3, 'post__not_in' => array( $the_post_id )  ) );
-			while ( have_posts() ) : the_post(); ?>
+
+			<?php
+			$post_cats = get_the_category( $post_id );
+			$the_category_slug = $post_cats[0]->slug;
+			?>
+
+			<?php query_posts( array ( 'category_name'=> $the_category_slug, 'posts_per_page' => 3, 'post__not_in' => array( $the_post_id )  ) );
+			 while ( have_posts() ) : the_post(); ?>
 			<?php /*if( get_the_ID() != $the_post_id ) : */?>
+
 			<div class="post<?php  ( $idx == 0  || $idx % 3 == 0 ? print " first" : "" ) ?>" onclick="location.href='<?php the_permalink(); ?>'">
-				<?php if ( has_post_thumbnail() or ( has_category() and !( has_category( get_term_by( 'name', 'Uncategorized', 'category' )->term_id ) ) ) ) : ?>
+				<?php if ( has_post_thumbnail() or ( has_category() and !( has_category( get_term_by( 'slug', 'uncategorized', 'category' )->term_id ) ) ) ) : ?>
 					<div class="header">
 						<?php the_post_thumbnail(); ?>
 						<?php
 						$postcats = get_the_category();
 						if ( $postcats ) {
 							foreach ( $postcats as $postcat ) {
-								if ( $postcat->name != "Uncategorized" ) {
+								if ( $postcat->slug != "uncategorized") {
 									echo '<div class="category byline '
 									. $postcat->slug
 									. '"><i>&nbsp;</i>&nbsp;'
@@ -97,7 +105,8 @@ if (is_mobile() ) {
 				</div>
 			</div>
 			<?php /*endif;*/ ?>
-		<?php endwhile; ?>
-	</div>
+			<?php endwhile; ?>
+		</div>
 </div>
 <?php } ?>
+

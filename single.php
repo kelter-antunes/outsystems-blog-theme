@@ -45,10 +45,14 @@ global $the_post_id;
 
 			<?php if ( is_mobile() == false ) {?>
 			<div class="category">
-				<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> › 
+
+				<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a>	
+
 				<?php if( $category ) : ?>
-					<a href="<?php echo ($category ? get_category_link( $category->term_id ) : '#'); ?>"><?php echo $the_category ?></a>
+						<?php echo (' › ') ?>
+						<a href="<?php echo ($category ? get_category_link( $category->term_id ) : '#'); ?>"><?php echo $the_category ?></a>
 				<?php endif; ?>
+	
 			</div>
 
 			<?php 

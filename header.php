@@ -34,50 +34,55 @@ if ( is_mobile() == false ) {
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript">
 	/** dropdown menus **/
-	var currentActive;
+var currentActive;
 
-	function hideDropDown(_elem) {
-		$('.navigation-bar li[class=active]').removeClass('active');
-		$('[data-dropdown-wrapper]').hide();
+function hideDropDown(_elem) {
+	$('.navigation-bar li.active').removeClass('active');
+	$('.navigation-bar li.company').addClass('active');
+	$('[data-dropdown-wrapper]').hide();
+}
+
+function toggleDropdowMenu(_elem) {
+	$('.navigation-bar li.active').removeClass('active');
+	$('[data-dropdown-wrapper]').hide();
+	$("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
+
+	_elem.parent().addClass('active');
+	//currentActive.removeClass('active');
+	/*
+	if (_elem.parent().hasClass('active')) {
+		_elem.parent().removeClass('active');
+		currentActive.addClass('active');
+	} else {
+		_elem.parent().addClass('active');
+		currentActive.removeClass('active');
 	}
+	*/
+}
+$(document).ready(function() {
+	currentActive = $('.navigation-bar li.active');
+	$('[data-option=dropdown]').click(function(e) {
+		e.preventDefault();
+		e.stopPropagation();
 
-	function toggleDropdowMenu(_elem) {
-		$('.navigation-bar li[class=active]').removeClass('active');
-		$('[data-dropdown-wrapper]').hide();
-		$("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
+		clicked = $(this);
 
-		if (_elem.parent().hasClass('active')) {
-			_elem.parent().removeClass('active');
-			currentActive.addClass('active');
+		if ($("[data-dropdown-wrapper='" + $(clicked).attr('data-name') + "']").is(":visible")) {
+			hideDropDown(clicked);
 		} else {
-			_elem.parent().addClass('active');
-			currentActive.removeClass('active');
+			toggleDropdowMenu(clicked);
 		}
-	}
-	$(document).ready(function() {
-		currentActive = $('.navigation-bar li[class=active]');
-		$('[data-option=dropdown]').click(function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-
-			clicked = $(this);
-
-			if ($("[data-dropdown-wrapper='" + $(clicked).attr('data-name') + "']").is(":visible")) {
-				hideDropDown(clicked);
-			} else {
-				toggleDropdowMenu(clicked);
-			}
 
 
-			$('[data-dropdown-wrapper]').click(function(event) {
-				event.stopPropagation();
-			});
+		$('[data-dropdown-wrapper]').click(function(event) {
+			event.stopPropagation();
+		});
 
-			$(document).on('click', function(e) {
-				hideDropDown(clicked);
-			});
+		$(document).on('click', function(e) {
+			hideDropDown(clicked);
 		});
 	});
+});
 	</script>
 	<script type="text/javascript" src="/blog/wp-content/themes/outsystems-blog-theme/js/masonry.pkgd.js"></script>
 	<script type="text/javascript" src="/blog/wp-content/themes/outsystems-blog-theme/js/jquery.waitforimages.js"></script>
@@ -87,7 +92,7 @@ if ( is_mobile() == false ) {
 
 
 	<?php
-	/*
+/*
 	 * 	Add this to support sites with sites with threaded comments enabled.
 	 */
 if ( is_singular() /*&& get_option( 'thread_comments' )*/ )

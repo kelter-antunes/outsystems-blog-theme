@@ -104,7 +104,7 @@ wp_get_archives( 'type=monthly&format=link' );
 				<div class="navigation-inner container">
 					<div id="wt29_wtheader" class="row">
 						<style>.submenuhover{top: 80px;}.navigation-inner{position: inherit;}</style>
-						<div data-swiftype-index="false" style="position: relative; z-index: 9999;height: 30px;text-align: right;">
+						<div data-swiftype-index="false" class="swiftype-bar" >
 							<style>.header-hero-wrapper{padding-top: 0;}.navigation-inner{height: 80px;}.navigation-outter.navigation-wrapper{padding-top: 0px;}</style>
 							<span class="header-contacts">Call us at  404-719-5100</span>
 							<a title="Contact us" alt="Contact us" class="popup_link header-contact-us" href="/company/contact-us/">Contact Us</a>
