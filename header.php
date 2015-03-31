@@ -23,14 +23,12 @@ if ( is_mobile() == false ) {
 
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=font-css.css&v=20141008115802" charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase&v=20141008115802" charset="UTF-8" />
-	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css.min.css&v=20141008115802" charset="UTF-8" />
-	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css.min.css&v=20141008115802" charset="UTF-8" />
-	<link type="text/css" rel="stylesheet" href="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-css.min.css&v=20141008115802" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=font-css.css&v=<?php echo esc_attr( get_option('last_update_date') ); ?>" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=bootstrapbase&v=<?php echo esc_attr( get_option('last_update_date') ); ?>" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-css.min.css&v=<?php echo esc_attr( get_option('last_update_date') ); ?>" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-header-css.min.css&v=<?php echo esc_attr( get_option('last_update_date') ); ?>" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="/CMS_BackOffice/ResourceLink.aspx?ResourceName=simplify-footer-css.min.css&v=<?php echo esc_attr( get_option('last_update_date') ); ?>" charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
-
 
 
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -81,12 +79,15 @@ if ( is_mobile() == false ) {
 		});
 	});
 	</script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/masonry.pkgd.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.waitforimages.js"></script>
+	<script type="text/javascript" src="/blog/wp-content/themes/outsystems-blog-theme/js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="/blog/wp-content/themes/outsystems-blog-theme/js/jquery.waitforimages.js"></script>
+
+		<script type="text/javascript" src="//use.typekit.net/jlz7hji.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
 	<?php
-/*
+	/*
 	 * 	Add this to support sites with sites with threaded comments enabled.
 	 */
 if ( is_singular() /*&& get_option( 'thread_comments' )*/ )

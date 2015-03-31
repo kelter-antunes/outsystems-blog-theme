@@ -33,54 +33,54 @@ function ostheme_comment( $comment, $args, $depth ) {
 	?>
 	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
 	<?php if ( 'div' != $args['style'] ) : ?>
-	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
-	<div class="comment-author vcard">
-		<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-		<?php printf( __( '<h5><span class="fn">%s<span></h5>' ), get_comment_author_link() ) ?>
-	</div>
-	<?php if ( $comment->comment_approved == '0' ) : ?>
-	<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
-	<br />
-<?php endif; ?>
+		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+		<?php endif; ?>
+		<div class="comment-author vcard">
+			<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+			<?php printf( __( '<h5><span class="fn">%s<span></h5>' ), get_comment_author_link() ) ?>
+		</div>
+		<?php if ( $comment->comment_approved == '0' ) : ?>
+			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
+			<br />
+		<?php endif; ?>
 
-<div class="comment-meta commentmetadata">
-	<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+		<div class="comment-meta commentmetadata">
+			<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+				<?php
+				/* translators: 1: date, 2: time */
+				printf( __( '%1$s at %2$s' ), get_comment_date(),  get_comment_time() ) ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
+				?>
+				&nbsp;|&nbsp;
+				<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ) ?>
+			</div>
+
+			<?php comment_text() ?>
+
+			<?php if ( 'div' != $args['style'] ) : ?>
+			</div>
+		<?php endif; ?>
 		<?php
-		/* translators: 1: date, 2: time */
-		printf( __( '%1$s at %2$s' ), get_comment_date(),  get_comment_time() ) ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
-		?>
-		&nbsp;|&nbsp;
-		<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ) ?>
-	</div>
+	}
 
-	<?php comment_text() ?>
+	function ostheme_comment_rss_link( $output, $show ) {
+		if ( in_array( $show, array( 'rss_url', 'rss2_url', 'rss', 'rss2', '' ) ) )
+			$output = 'http://feedpress.me/outsystems-blog';
 
-	<?php if ( 'div' != $args['style'] ) : ?>
-</div>
-<?php endif; ?>
-<?php
-}
-
-function ostheme_comment_rss_link( $output, $show ) {
-	if ( in_array( $show, array( 'rss_url', 'rss2_url', 'rss', 'rss2', '' ) ) )
-		$output = 'http://feedpress.me/outsystems-blog';
-
-	return $output;
-}
-add_filter( 'bloginfo_url', 'ostheme_comment_rss_link', 10, 2 );
-add_filter( 'feed_link', 'ostheme_comment_rss_link', 10, 2 );
+		return $output;
+	}
+	add_filter( 'bloginfo_url', 'ostheme_comment_rss_link', 10, 2 );
+	add_filter( 'feed_link', 'ostheme_comment_rss_link', 10, 2 );
 
 
 
-add_filter('the_content', 'my_addlightboxrel');
-function my_addlightboxrel($content) {
-	global $post;
-	$pattern ="/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
-	$replacement = '<a$1href=$2$3.$4$5 rel="lightbox" title="'.$post->post_title.'"$6>';
-	$content = preg_replace($pattern, $replacement, $content);
-	return $content;
-}
+	add_filter('the_content', 'my_addlightboxrel');
+	function my_addlightboxrel($content) {
+		global $post;
+		$pattern ="/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
+		$replacement = '<a$1href=$2$3.$4$5 rel="lightbox" title="'.$post->post_title.'"$6>';
+		$content = preg_replace($pattern, $replacement, $content);
+		return $content;
+	}
 
 
 // Widgets part
@@ -129,20 +129,20 @@ add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
 
 function my_show_extra_profile_fields( $user ) { ?>
 
-	<h3><?php _e("Extra profile information","outsystems_blog");?></h3>
+<h3><?php _e("Extra profile information","outsystems_blog");?></h3>
 
-	<table class="form-table">
+<table class="form-table">
 
-		<tr>
-			<th><label for="twitter"><?php _e("Twitter","outsystems_blog");?></label></th>
+	<tr>
+		<th><label for="twitter"><?php _e("Twitter","outsystems_blog");?></label></th>
 
-			<td>
-				<input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
-				<span class="description"><?php _e("Please enter your Twitter username.","outsystems_blog");?></span>
-			</td>
-		</tr>
+		<td>
+			<input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your Twitter username.","outsystems_blog");?></span>
+		</td>
+	</tr>
 
-	</table>
+</table>
 <?php }
 
 
@@ -160,14 +160,25 @@ function my_save_extra_profile_fields( $user_id ) {
 
 
 function post_intro($post){
-	 if (!is_single() && $post->post_excerpt!=""){
-		echo $post->post_excerpt;
-	 } else {
-		the_content();
-	 }
 
-	 if (is_single()){
-		 echo get_field('call_to_action');
+	if (!is_single() && $post->post_excerpt!="" ){
+
+		if( strpos( $post->post_content, '<!--more-->' ) ) {
+			the_content();
+		}
+		else {
+			echo $post->post_excerpt;
+		}
+
+		
+	} else {
+		the_content();
+	}
+
+
+
+	if (is_single()){
+		echo get_field('call_to_action');
 		echo stripslashes(get_option('append_to_post'));
-	 }
+	}
 }

@@ -33,7 +33,7 @@
 			type       : "GET",
 			data       : {pageNumber: page},
 			dataType   : "html",
-			url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/outsystems_blog/loopHandler.php",
+			url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/outsystems-blog-theme/loopHandler.php",
 			beforeSend : function(){
 			},
 			success    : function(data){

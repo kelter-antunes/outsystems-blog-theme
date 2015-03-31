@@ -5,7 +5,7 @@ Theme URI: https://github.com/kelter-antunes/outsystems-blog-theme
 Description: Outsystems wordpress theme
 Author: Outsystems Dex Team
 Author URI: http://www.outsystems.com
-Version: 1.5
+Version: 1.6
 */
 
 body {
@@ -16,6 +16,9 @@ body {
 ul {
     margin: 14px 0;
     padding: 0 0 0 40px
+}
+.submenuhover ul.list {
+    padding: 0;
 }
 #footer-wrapper ul {
     margin: 0;
@@ -291,31 +294,22 @@ a img.aligncenter {
     background: url(img/icons.png) no-repeat;
     display: inline-block
 }
-.categories i.tech-zone, 
-.categories i.tech-alueella {
+.categories i.tech-zone, .categories i.tech-alueella {
     background-position: -90px -1px;
     width: 15px;
     height: 18px
 }
-.categories i.platform-in-action, 
-.categories i.alustan-toiminta {
+.categories i.platform-in-action, .categories i.alustan-toiminta {
     background-position: -40px -2px;
     width: 30px;
     height: 18px
 }
-.categories i.perspectives, 
-.categories i.nakokulmia {
+.categories i.perspectives, .categories i.nakokulmia {
     background-position: -4px -2px;
     width: 16px;
     height: 18px
 }
-.categories .toggle.active i.tech-zone, 
-.categories .toggle.active i.tech-alueella,
-.categories .toggle.active i.platform-in-action, 
-.categories .toggle.active i.alustan-toiminta, 
-.categories .toggle.active i.perspectives, 
-.categories .toggle.active i.nakokulmia,
-.categories .toggle.active {
+.categories .toggle.active i.tech-zone, .categories .toggle.active i.tech-alueella, .categories .toggle.active i.platform-in-action, .categories .toggle.active i.alustan-toiminta, .categories .toggle.active i.perspectives, .categories .toggle.active i.nakokulmia, .categories .toggle.active {
     background-color: #FFF
 }
 .post .header {
@@ -333,41 +327,30 @@ a img.aligncenter {
     line-height: 18px;
     color: #fff
 }
-.post .header .category.tech-zone,
-.post .header .category.tech-alueella {
+.post .header .category.tech-zone, .post .header .category.tech-alueella {
     background-color: #616161
 }
-.post .header .category.platform-in-action,
-.post .header .category.alustan-toiminta {
+.post .header .category.platform-in-action, .post .header .category.alustan-toiminta {
     background-color: #6699CD
 }
-.post .header .category.perspectives,
-.post .header .category.nakokulmia {
+.post .header .category.perspectives, .post .header .category.nakokulmia {
     background-color: #CC2928
 }
-.post .header .category.perspectives i,
-.post .header .category.nakokulmia i,
-.post .header .category.platform-in-action i,
-.post .header .category.alustan-toiminta i,
-.post .header .category.tech-zone i,
-.post .header .category.tech-alueella i {
+.post .header .category.perspectives i, .post .header .category.nakokulmia i, .post .header .category.platform-in-action i, .post .header .category.alustan-toiminta i, .post .header .category.tech-zone i, .post .header .category.tech-alueella i {
     background: url(img/icons.png) no-repeat;
     display: inline-block
 }
-.post .header .category.perspectives i,
-.post .header .category.nakokulmia i  {
+.post .header .category.perspectives i, .post .header .category.nakokulmia i {
     background-position: -4px -31px;
     width: 16px;
     height: 18px
 }
-.post .header .category.platform-in-action i,
-.post .header .category.alustan-toiminta i {
+.post .header .category.platform-in-action i, .post .header .category.alustan-toiminta i {
     background-position: -40px -31px;
     width: 30px;
     height: 18px
 }
-.post .header .category.tech-zone i,
-.post .header .category.tech-alueella i {
+.post .header .category.tech-zone i, .post .header .category.tech-alueella i {
     background-position: -90px -30px;
     width: 15px;
     height: 18px
