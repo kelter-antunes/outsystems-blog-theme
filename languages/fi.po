@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Outsystems Blog Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu Jan 29 2015 14:34:06 GMT+0000 (WET)\n"
-"PO-Revision-Date: Wed Feb 04 2015 15:24:33 GMT+0000 (WET)\n"
+"PO-Revision-Date: Tue Mar 31 2015 14:27:28 GMT+0100 (GMT Daylight Time)\n"
 "Last-Translator: god <msa@outsystems.com>\n"
 "Language-Team: \n"
 "Language: Finnish\n"
@@ -21,6 +21,253 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-SearchPath-0: ..\n"
 "X-Loco-Target-Locale: fi_FI"
+
+#: ../comments.php:24
+msgid "E-mail"
+msgstr ""
+
+#: ../comments.php:30
+msgid "URL"
+msgstr ""
+
+#: ../comments.php:44
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: ../footer-mobile.php:38
+msgid "Atlanta"
+msgstr ""
+
+#: ../footer-mobile.php:39
+msgid "+14047195100"
+msgstr ""
+
+#: ../footer-mobile.php:40
+msgid "+1 404 719 5100"
+msgstr ""
+
+#: ../footer.php:35 ../menu.php:4 ../menu_backup.php:1
+msgid "Blog"
+msgstr ""
+
+#: ../footer.php:41
+msgid "Agile Network"
+msgstr ""
+
+#: ../footer.php:46 ../functions.php:137
+msgid "Twitter"
+msgstr ""
+
+#: ../footer.php:49
+msgid "Facebook"
+msgstr ""
+
+#: ../footer.php:52
+msgid "G+"
+msgstr ""
+
+#: ../footer.php:55
+msgid "linkedin"
+msgstr ""
+
+#: ../functions.php:40
+#, php-format
+msgid "<h5><span class=\"fn\">%s<span></h5>"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: ../functions.php:51
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:51
+msgid "(Edit)"
+msgstr ""
+
+#: ../menu.php:4
+msgid " "
+msgstr ""
+
+#: ../menu.php:4
+msgid "                   "
+msgstr ""
+
+#: ../menu.php:4
+msgid "Field Services"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Mobile Order Management"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Executive Dashboard"
+msgstr ""
+
+#: ../page.php:18
+msgid "Filed under&#58;"
+msgstr ""
+
+#: ../footer-mobile.php:16 ../menu.php:4 ../menu_backup.php:1
+msgid "Events"
+msgstr ""
+
+#: ../footer-mobile.php:17 ../footer.php:32
+msgid "Resources"
+msgstr ""
+
+#: ../footer-mobile.php:18 ../footer.php:38
+msgid "Community"
+msgstr ""
+
+#: ../footer-mobile.php:58 ../footer.php:87
+msgid "Terms &amp; Conditions"
+msgstr ""
+
+#: ../footer-mobile.php:59 ../footer.php:90
+msgid "About Cookies"
+msgstr ""
+
+#: ../footer.php:9
+msgid "Company"
+msgstr ""
+
+#: ../footer.php:12
+msgid "About Us"
+msgstr ""
+
+#: ../footer.php:15 ../menu.php:4 ../menu_backup.php:1
+msgid "Careers"
+msgstr ""
+
+#: ../footer.php:18
+msgid "Training"
+msgstr ""
+
+#: ../footer.php:21
+msgid "Partners"
+msgstr ""
+
+#: ../footer.php:24 ../menu.php:4 ../menu_backup.php:1
+msgid "News"
+msgstr ""
+
+#: ../footer.php:29
+msgid "More"
+msgstr ""
+
+#: ../footer.php:62
+msgid "Upcoming Events"
+msgstr ""
+
+#: ../footer.php:66
+msgid "more events"
+msgstr ""
+
+#: ../footer.php:81
+msgid "Built with"
+msgstr ""
+
+#: ../footer.php:83
+msgid "All rights reserved."
+msgstr ""
+
+#: ../menu.php:1
+msgid "Call us at  404-719-5100"
+msgstr ""
+
+#: ../menu.php:1
+msgid "Login"
+msgstr ""
+
+#: ../menu.php:1 ../menu_backup.php:1
+msgid "Solutions"
+msgstr ""
+
+#: ../menu.php:1 ../menu_backup.php:1
+msgid "Customers"
+msgstr ""
+
+#: ../menu.php:4
+msgid "                   Solutions                 "
+msgstr ""
+
+#: ../menu.php:4
+msgid ""
+"                   Hundreds of companies                    <br/>            "
+"        in 22 industries use                    <br/>                    "
+"OutSystems Platform to                    <br/>                    deliver "
+"innovative                    <br/>                    business solutions.   "
+"              "
+msgstr ""
+
+#: ../menu.php:4
+msgid ""
+"                   See what our customers have built in industries like:     "
+"            "
+msgstr ""
+
+#: ../menu.php:4
+msgid "Banking"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Insurance"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Healthcare"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Pharma &amp; Biotech"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Retail &amp; Consumer Goods"
+msgstr ""
+
+#: ../menu.php:4
+msgid "All industries &raquo;"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Kick-start your next app project with our sample apps"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Customer Portal"
+msgstr ""
+
+#: ../menu.php:4
+msgid "Car Accident Reporting"
+msgstr ""
+
+#: ../menu.php:4
+msgid "More apps &raquo;"
+msgstr ""
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Overview"
+msgstr ""
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Management Team"
+msgstr ""
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Analysts"
+msgstr ""
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Investors"
+msgstr ""
+
+#: ../menu.php:4 ../menu_backup.php:1
+msgid "Offices and Support"
+msgstr ""
 
 #: ../404.php:13
 msgid "Page not found!"
@@ -60,7 +307,7 @@ msgstr "﻿Tilaa RSS-syöte"
 
 #: ../category.php:21 ../index.php:25 ../index.php:60
 msgid "All posts"
-msgstr "﻿Kaikki artikkelit"
+msgstr "Kaikki"
 
 #: ../comments.php:3
 msgid "Comments"
@@ -69,14 +316,6 @@ msgstr "Kommentit"
 #: ../comments.php:18
 msgid "Name"
 msgstr "﻿Nimi"
-
-#: ../comments.php:24
-msgid "E-mail"
-msgstr ""
-
-#: ../comments.php:30
-msgid "URL"
-msgstr ""
 
 #: ../comments.php:39
 msgid "Leave Your Comment"
@@ -91,54 +330,17 @@ msgstr "Jätä vastaus %s"
 msgid "Submit"
 msgstr "﻿Sano"
 
-#: ../comments.php:44
-msgctxt "noun"
-msgid "Comment"
-msgstr ""
-
 #: ../footer-mobile.php:15 ../menu.php:1 ../menu_backup.php:1
 msgid "About"
 msgstr "Tietoja"
-
-#: ../footer-mobile.php:16 ../menu.php:4 ../menu_backup.php:1
-msgid "Events"
-msgstr "Tapahtumat"
-
-#: ../footer-mobile.php:17 ../footer.php:32
-msgid "Resources"
-msgstr "Resurssit"
-
-#: ../footer-mobile.php:18 ../footer.php:38
-msgid "Community"
-msgstr "Yhteisö"
 
 #: ../footer-mobile.php:34 ../testpp.php:585
 msgid "more offices"
 msgstr "lisää toimistot"
 
-#: ../footer-mobile.php:38
-msgid "Atlanta"
-msgstr ""
-
-#: ../footer-mobile.php:39
-msgid "+14047195100"
-msgstr ""
-
-#: ../footer-mobile.php:40
-msgid "+1 404 719 5100"
-msgstr ""
-
 #: ../footer-mobile.php:55
 msgid "Built with the"
 msgstr "Rakennettu"
-
-#: ../footer-mobile.php:58 ../footer.php:87
-msgid "Terms &amp; Conditions"
-msgstr "Ehdot &amp; olosuhteet"
-
-#: ../footer-mobile.php:59 ../footer.php:90
-msgid "About Cookies"
-msgstr "Tietoa Cookie"
 
 #: ../footer-mobile.php:81
 msgid "Search"
@@ -148,92 +350,9 @@ msgstr "Haku"
 msgid "Cancel"
 msgstr "Peruuttaa"
 
-#: ../footer.php:9
-msgid "Company"
-msgstr "Yhtiö"
-
-#: ../footer.php:12
-msgid "About Us"
-msgstr "Meistä"
-
-#: ../footer.php:15 ../menu.php:4 ../menu_backup.php:1
-msgid "Careers"
-msgstr "Työpaikat"
-
-#: ../footer.php:18
-msgid "Training"
-msgstr "Koulutus"
-
-#: ../footer.php:21
-msgid "Partners"
-msgstr "Yhteistyökumppanit"
-
-#: ../footer.php:24 ../menu.php:4 ../menu_backup.php:1
-msgid "News"
-msgstr "Uutiset"
-
-#: ../footer.php:29
-msgid "More"
-msgstr "lisää"
-
-#: ../footer.php:35 ../menu.php:4 ../menu_backup.php:1
-msgid "Blog"
-msgstr ""
-
-#: ../footer.php:41
-msgid "Agile Network"
-msgstr ""
-
-#: ../footer.php:46 ../functions.php:137
-msgid "Twitter"
-msgstr ""
-
-#: ../footer.php:49
-msgid "Facebook"
-msgstr ""
-
-#: ../footer.php:52
-msgid "G+"
-msgstr ""
-
-#: ../footer.php:55
-msgid "linkedin"
-msgstr ""
-
-#: ../footer.php:62
-msgid "Upcoming Events"
-msgstr "Tulevat tapahtumat"
-
-#: ../footer.php:66
-msgid "more events"
-msgstr "lisää tapahtumia"
-
-#: ../footer.php:81
-msgid "Built with"
-msgstr "Rakennettu"
-
-#: ../footer.php:83
-msgid "All rights reserved."
-msgstr "Kaikki oikeudet pidätetään."
-
-#: ../functions.php:40
-#, php-format
-msgid "<h5><span class=\"fn\">%s<span></h5>"
-msgstr ""
-
 #: ../functions.php:43
 msgid "Your comment is awaiting moderation."
 msgstr "Kommenttisi odottaa maltillisesti."
-
-#. translators: 1: date, 2: time
-#: ../functions.php:51
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: ../functions.php:51
-msgid "(Edit)"
-msgstr ""
 
 #: ../functions.php:132
 msgid "Extra profile information"
@@ -276,28 +395,12 @@ msgid "Error loading more posts."
 msgstr "﻿Virhe ladattaessa palvelua"
 
 #: ../menu.php:1
-msgid "Call us at  404-719-5100"
-msgstr "Soita meille 404-719-5100"
-
-#: ../menu.php:1
 msgid "Contact Us"
 msgstr "Ota yhteyttä"
-
-#: ../menu.php:1
-msgid "Login"
-msgstr "Kirjaudu"
 
 #: ../menu.php:1 ../menu_backup.php:1
 msgid "Platform"
 msgstr "Platforma"
-
-#: ../menu.php:1 ../menu_backup.php:1
-msgid "Solutions"
-msgstr "﻿Liuos"
-
-#: ../menu.php:1 ../menu_backup.php:1
-msgid "Customers"
-msgstr "Asiakkaat"
 
 #: ../menu.php:1 ../menu_backup.php:1
 msgid "Get Started"
@@ -312,116 +415,8 @@ msgid "Learn More..."
 msgstr "Lue lisää ..."
 
 #: ../menu.php:4
-msgid " "
-msgstr ""
-
-#: ../menu.php:4
 msgid " Mobile Application <br/>Delivery"
 msgstr " Mobile Application <br/>Toimitus"
-
-#: ../menu.php:4
-msgid "                   Solutions                 "
-msgstr "                   Ratkaisut                 "
-
-#: ../menu.php:4
-msgid ""
-"                   Hundreds of companies                    <br/>            "
-"        in 22 industries use                    <br/>                    "
-"OutSystems Platform to                    <br/>                    deliver "
-"innovative                    <br/>                    business solutions.   "
-"              "
-msgstr ""
-"                   Sadat yritykset <br/> 22 teollisuus käyttää <br/> "
-"OutSystems Platform <br/> tarjota innovatiivisia <br/> liiketoiminnan "
-"ratkaisuja.                 "
-
-#: ../menu.php:4
-msgid ""
-"                   See what our customers have built in industries like:     "
-"            "
-msgstr ""
-"                   Katso mitä asiakkaamme ovat rakennettu "
-"teollisuudenaloilla, kuten:                 "
-
-#: ../menu.php:4
-msgid "Banking"
-msgstr "Pankkitoiminta"
-
-#: ../menu.php:4
-msgid "Insurance"
-msgstr "Vakuutus"
-
-#: ../menu.php:4
-msgid "Healthcare"
-msgstr "Terveydenhuolto"
-
-#: ../menu.php:4
-msgid "Pharma &amp; Biotech"
-msgstr "Pharma &amp; Biotech"
-
-#: ../menu.php:4
-msgid "Retail &amp; Consumer Goods"
-msgstr "Retail &amp; Kulutustavarat"
-
-#: ../menu.php:4
-msgid "All industries &raquo;"
-msgstr "Kaikki teollisuudenalat &raquo;"
-
-#: ../menu.php:4
-msgid "                   "
-msgstr ""
-
-#: ../menu.php:4
-msgid "Kick-start your next app project with our sample apps"
-msgstr "Käyntiin seuraavalle app projekti meidän näyte apps"
-
-#: ../menu.php:4
-msgid "Field Services"
-msgstr ""
-
-#: ../menu.php:4
-msgid "Mobile Order Management"
-msgstr ""
-
-#: ../menu.php:4
-msgid "Executive Dashboard"
-msgstr ""
-
-#: ../menu.php:4
-msgid "Customer Portal"
-msgstr "Asiakasportaali"
-
-#: ../menu.php:4
-msgid "Car Accident Reporting"
-msgstr "Auton Onnettomuuden raportoinnista"
-
-#: ../menu.php:4
-msgid "More apps &raquo;"
-msgstr "Lisää sovelluksia &raquo;"
-
-#: ../menu.php:4 ../menu_backup.php:1
-msgid "Overview"
-msgstr "yleiskatsaus"
-
-#: ../menu.php:4 ../menu_backup.php:1
-msgid "Management Team"
-msgstr "Johtoryhmä"
-
-#: ../menu.php:4 ../menu_backup.php:1
-msgid "Analysts"
-msgstr "Analyytikot"
-
-#: ../menu.php:4 ../menu_backup.php:1
-msgid "Investors"
-msgstr "Sijoittajat"
-
-#: ../menu.php:4 ../menu_backup.php:1
-msgid "Offices and Support"
-msgstr "Toimistot ja tuki"
-
-#: ../page.php:18
-msgid "Filed under&#58;"
-msgstr ""
 
 #: ../page.php:18
 msgid "by"
