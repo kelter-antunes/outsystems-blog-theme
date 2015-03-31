@@ -31,9 +31,9 @@
 		page++;
 		$.ajax({
 			type       : "GET",
-			data       : {pageNumber: page},
+			data       : {pageNumber: page, category: "<?php echo $selected_category; ?>"},
 			dataType   : "html",
-			url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/outsystems-blog-theme/loopHandler.php",
+			url        : "<?php bloginfo( 'url' ); ?>/wp-content/themes/outsystems_blog/loopHandler.php",
 			beforeSend : function(){
 			},
 			success    : function(data){
