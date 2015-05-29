@@ -764,6 +764,10 @@ html[dir="rtl"] .tags i{
     margin-left:10px;
 }
 
+html[dir="rtl"] .social_share {
+  direction: ltr;
+}
+
 html[dir="rtl"] #footer-bottom li {
     float: none;
 }
