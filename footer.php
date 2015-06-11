@@ -102,7 +102,7 @@
 
 		$.getJSON( "https://www.outsystems.com/footer.aspx", function( data ) {
 			if(data.locale)
-				$('#footer-mid').addClass(data.locale);
+				$('#footer-wrapper #footer-mid').addClass(data.locale);
 			if(data.events)
 				$("#footer-events-list li:first-child").after($(data.events));
 			if(data.contactus)
